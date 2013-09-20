@@ -15,5 +15,6 @@ is made and priorities shift as we learn more from users.
 ### Long Term (9 months to 18 months - funding dependent)
 
 ### Ideas (catch all)
+* Allow users to make the map visualization their screen saver
 
 ### Completed
