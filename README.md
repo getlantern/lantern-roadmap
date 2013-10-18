@@ -4,10 +4,10 @@ This document contains the current state of the Lantern roadmap. It will be dyna
 is made and priorities shift as we learn more from users. 
 
 ### Immediate (within 4 weeks)
-* Focus on all give mode features for Lantern 1.0.0 final release.
+* Focus on all get mode features for Lantern 1.0.0 final release.
 
 ### Short (1 month - 3 months)
-* Focus on all get mode features for Lantern 1.1 release.
+* Focus on all give mode features for Lantern 1.1 release.
 * Implement design changes to make give mode users feel more connected on the Lantern map visualization to make users more likely to invite other users.
 
 ### Medium (3 month - 9 month)
