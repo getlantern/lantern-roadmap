@@ -50,6 +50,9 @@ Very active.
 
 http://www.playframework.com/
 
+##### Make users' home page our version of the Google search page
+Could be a great way to fund Lantern! Along the lines of what FireFox does with their start page.
+
 
 #### Switch to Gradle Build System (ox)
 Ox finds Maven to be annoying and unintuitive.  [Gradle](http://www.gradle.org/)
