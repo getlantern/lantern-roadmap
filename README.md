@@ -50,5 +50,8 @@ Very active.
 
 http://www.playframework.com/
 
+##### Make users' home page our version of the Google search page
+Could be a great way to fund Lantern! Along the lines of what FireFox does with their start page.
+
 
 ### Completed
