@@ -78,35 +78,6 @@ the following goals (both technical and process):
  * Make the process of supporting Lantern as easy as possible for diaspora
    organizations that want to help.  
 
-#### Brainstorm (Ideas)
-
- * Improved invite queue admin UI
- * Squash bugs (real bugs, not missing features)
-   * Especially in installation and invitation processes
- * Simplify invitation process
-   * Can we ditch the need for customized installers?
- * Support personalization of invitations
- * Allow inviters to track their invitations
-   * Has he invite been received?
-   * Did they sign up?
-   * Are they actively using Lantern?
-   * Are they having problems using Lantern?
-   * Track metrics about invitation process (how many people have I invited, how
-     many accepted, etc)
-     * Track for use by the inviters and in the aggregate for use by us
- * Bulk invite support in the UI
- * Support customization for group or for individuals
- * Tools for institutional users of Lantern?
-   * e.g. Democracy Council, balatarin
-   * Make sure that Lantern works well in an organizational LAN network
-   * Do we introduce a new type of institutional Lantern user?
- * Use email more proactively
-   * At what points in the lifecycle should we reach out to whom?
- * Let’s reach out manually to the diaspora
-   * Direct marketing    
-   * Better Documentation
-   * We can all help
-
 #### Focus Areas
 
 ##### Invitation (big?)
