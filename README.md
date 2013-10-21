@@ -42,7 +42,7 @@ following:
  1. Lantern core team member invites diaspore
  2. Diaspore installs Lantern
  3. Diaspore invites friends and family back home to Lantern
- 4. Diaspore invites other members of diaspora to run Lantern in Get mode 
+ 4. Diaspore invites other members of diaspora to run Lantern in Give mode 
  5. Friends and family install and run Lantern
  6. Diaspore invites friends in the uncensored world to Lantern
  7. Friends and family in uncensored world install Lantern
@@ -117,6 +117,7 @@ the following goals (both technical and process):
    * Configured
    * Started proxying through Lantern
    * Track any problems they may have
+   * Track connections to 2nd degree friends
  * Display invitee's progress to inviters (privacy implications?)
  * Track and display aggrevate invitation process metrics
  * Send reminder emails to invitees who haven't accepted
@@ -132,17 +133,19 @@ the following goals (both technical and process):
 ##### Installation (medium?)
 
  * Installation on every platform should be fool-proof
- * Ditch custom installers if at all possible (e.g. by disseminating fallback
-   proxy information through KScope)
- * Support push of upgrade notifications so we can easily get people off broken
-   version of Lantern when necessary
  * Provide great documentation on the installation process
  * Remove requirement to be admin user to install and run Lantern?
+ * Ditch custom installers if at all possible (e.g. by disseminating fallback
+   proxy information through KScope or by hand)?
+ * Support push of upgrade notifications so we can easily get people off broken
+   version of Lantern when necessary
 
 ##### Support for Institutional Lantern Use (unknown)
 
  * Make sure Lantern runs well on a typical corporate LAN
  * Support some form of corporate identity?
+ * Rebranded Lantern
+ * Institutional sponsorship of fallback proxies
  * Probably need to talk to potential institutional users to see what they would
    need/want.
 
