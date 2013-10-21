@@ -31,22 +31,21 @@ for self-propagation.  We will refer to members of the diaspora as "diaspores".
  * Some members of the diaspora work for organizations that actively support
    censorship circumvention and are known to and trusted by the Lantern team.
  * Some members of the diaspora work for organizations that are not involved in
-   censorship circumvention but that have strong networks across back home and
-   might be amenable to helping build the Lantern network.
+   censorship circumvention but that have strong networks back home and might be
+   amenable to helping build the Lantern network.
    
 #### Network Growth Cycle
 
-We expect the Lantern network to grow in a cyclic process somewhat like the
-following:
+We expect the Lantern network to grow in a process somewhat like the following:
 
  1. Lantern core team member invites diaspore
  2. Diaspore installs Lantern
- 3. Diaspore invites friends and family back home to Lantern
+ 3. Diaspore invites friends and family from back home to join Lantern
  4. Diaspore invites other members of diaspora to run Lantern in Give mode 
  5. Friends and family install and run Lantern
- 6. Diaspore invites friends in the uncensored world to Lantern
- 7. Friends and family in uncensored world install Lantern
- 8. Friends and family back home connect through friends in uncensored world
+ 6. Diaspore invites friends in the uncensored world to join Lantern
+ 7. Friends in uncensored world install Lantern
+ 8. Friends and family back home connect through friends in the uncensored world
     and are given the opportunity to send a thank you to them
  9. Friends in the uncensored world continue running Lantern
  
@@ -56,7 +55,11 @@ Note that the ordering here matters.  Inviting other uncensored diaspora to run
 Lantern can happen pretty early, since they are assumed to be motivated to
 support Lantern.  However, if friends in the uncensored world are invited too
 early (before there's much activity on the network), they won't benefit from
-the map visualization and won't get quite the warm fuzzy-feeling.
+the map visualization and won't get quite the warm fuzzy-feeling they might need
+to motivate them to keep Lantern running.
+
+(note) - our overall effort to get uncensored users to keep running Lantern
+could be "Keep the Lights On".
 
 #### Key Dandelion Goals
 
@@ -97,9 +100,9 @@ the following goals (both technical and process):
    don't seem to be using it much
  * Support bulk invites in the UI
  * Support personalized invitations
- * Send email give mode users with active get mode user base to suggest that
-   they invite more give mode users to help relieve the burden of serving their
-   friends. 
+ * Send email to give mode users with an active get mode user base to suggest
+   that they invite more give mode users to help relieve the burden of serving
+   their friends. 
  
 ##### Installation (medium?)
 
@@ -119,6 +122,7 @@ the following goals (both technical and process):
  * Institutional sponsorship of fallback proxies
  * Probably need to talk to potential institutional users to see what they would
    need/want.
+ * Get them involved with bug triage process on GitHub and in mailing list
 
 ##### Marketing/Outreach
 
