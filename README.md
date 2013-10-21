@@ -17,7 +17,7 @@ vitality and value of Lantern.
 Release 1.1 is codenamed "Dandelion" because of that plant's use of diaspores
 for self-propagation.  We will refer to members of the diaspora as "diaspores".
 
-#### Dandeloin Assumptions
+#### Dandelion Assumptions
 
  * Members of the diaspora are already motivated to join the Lantern network and
    run Lantern for personal reasons, and don't need to be sold on this.
@@ -58,9 +58,9 @@ support Lantern.  However, if friends in the uncensored world are invited too
 early (before there's much activity on the network), they won't benefit from
 the map visualization and won't get quite the warm fuzzy-feeling.
 
-#### Key Dandeloin Goals
+#### Key Dandelion Goals
 
-In order to support the above network growth cycle, Dandeloin should focus on
+In order to support the above network growth cycle, Dandelion should focus on
 the following goals (both technical and process):
 
  * Make it as easy as possible for diaspora to install Lantern.
