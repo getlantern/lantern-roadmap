@@ -6,11 +6,137 @@ is made and priorities shift as we learn more from users.
 ### Immediate (within 4 weeks)
 * Focus on all get mode features for Lantern 1.0.0 final release.
 
-### Short (1 month - 3 months)
-* Focus on all give mode features for Lantern 1.1 release.
-* Implement design changes to make give mode users feel more connected on the Lantern map visualization to make users more likely to invite other users.
+### Release 1.1, codename "Dandelion" (1 month - 3 months)
 
-### Medium (3 month - 9 month)
+Release 1.1 focuses on growing the Lantern network with the help of diaspora
+communities.  We see the diaspora as critical to building the foundation of a
+Lantern network that will benefit new censored users by providing them with
+live proxies and that will motivate new uncensored users by demonstrating the
+vitality and value of Lantern.
+
+Release 1.1 is codenamed "Dandelion" because of that plant's use of diaspores
+for self-propagation.  We will refer to members of the diaspora as "diaspores".
+
+#### Dandeloin Assumptions
+
+ * Members of the diaspora are already motivated to join the Lantern network and
+   run Lantern for personal reasons, and don't need to be sold on this.
+ * Members of the diaspora live in the uncensored world (i.e. we are not
+   modeling for individuals who have emigrated from one censored region to
+   another censored region).
+ * Members of the diaspora have connections in the censored world whom they can
+   bring onto the Lantern network.
+ * Members of the diaspora have connections in the uncensored world whom they
+   can bring onto the Lantern network.
+ * Some members of the diaspora work for organizations that actively support
+   censorship circumvention and are known to and trusted by the Lantern team.
+ * Some members of the diaspora work for organizations that are not involved in
+   censorship circumvention but that have strong networks across back home and
+   might be amenable to helping build the Lantern network.
+   
+#### Network Growth Cycle
+
+We expect the Lantern network to grow in a cyclic process somewhat like the
+following:
+
+ 1. Lantern core team member invites diaspore
+ 2. Diaspore installs Lantern
+ 3. Diaspore invites friends and family back home to Lantern
+ 4. Diaspore invites other members of diaspora to run Lantern in Get mode 
+ 5. Friends and family install and run Lantern
+ 6. Diaspore invites friends in the uncensored world to Lantern
+ 7. Friends and family in uncensored world install Lantern
+ 8. Friends and family back home connect through friends in uncensored world
+    and are given the opportunity to send a thank you to them
+ 9. Friends in the uncensored world continue running Lantern
+ 
+Release 1.1 will be successful if it can drive this cycle trough step 9.
+
+Note that the ordering here matters.  Inviting other uncensored diaspora to run
+Lantern can happen pretty early, since they are assumed to be motivated to
+support Lantern.  However, if friends in the uncensored world are invited too
+early (before there's much activity on the network), they won't benefit from
+the map visualization and won't get quite the warm fuzzy-feeling.
+
+#### Key Dandeloin Goals
+
+In order to support the above network growth cycle, Dandeloin should focus on
+the following goals (both technical and process):
+
+ * Make it as easy as possible for diaspora to install Lantern.
+ * Make it as easy as possible to invite friends and family back home.
+ * Make it as easy as possible for friends and family back home to get up and
+   running with Lantern.
+ * Give diaspora tools for following up on invitations.
+ * Help diaspora support their friends and family back home in using Lantern.
+ * Give diaspora tools to generate compelling invitations to friends in the
+   uncensored world.
+ * Encourage diaspora to invite other give mode users once they have some
+   activity from folks back home.
+ * Give friends and family back home a way to thank give mode users
+ * Reach out to diaspora to get them to use Lantern.
+ * Make the process of supporting Lantern as easy as possible for diaspora
+   organizations that want to help.  
+
+#### Brainstorm (Ideas)
+
+ * Improved invite queue admin UI
+ * Squash bugs (real bugs, not missing features)
+   * Especially in installation and invitation processes
+ * Simplify invitation process
+   * Can we ditch the need for customized installers?
+ * Support personalization of invitations
+ * Allow inviters to track their invitations
+   * Has he invite been received?
+   * Did they sign up?
+   * Are they actively using Lantern?
+   * Are they having problems using Lantern?
+   * Track metrics about invitation process (how many people have I invited, how
+     many accepted, etc)
+     * Track for use by the inviters and in the aggregate for use by us
+ * Bulk invite support in the UI
+ * Support customization for group or for individuals
+ * Tools for institutional users of Lantern?
+   * e.g. Democracy Council, balatarin
+   * Make sure that Lantern works well in an organizational LAN network
+   * Do we introduce a new type of institutional Lantern user?
+ * Use email more proactively
+   * At what points in the lifecycle should we reach out to whom?
+ * Let’s reach out manually to the diaspora
+   * Direct marketing    
+   * Better Documentation
+   * We can all help
+
+#### Focus Areas
+
+##### Invitation (big?)
+
+ * Track users' progress through the invitation and installation process
+ * Display invitee's progress to inviters (privacy implications?)
+ * Track and display aggrevate invitation process metrics
+ * Send reminder emails to invitees who haven't accepted
+ * Send reminder emails to inviters about invitees who haven't accepted
+ * Send reminder emails to inviters about invitees who've installed Lantern but
+   don't seem to be using it much
+ * Support bulk invites in the UI
+ * Support personalized invitations
+ * Send email give mode users with active get mode user base to suggest that
+   they invite more give mode users to help relieve the burden of serving their
+   friends. 
+ 
+##### Installation (medium?)
+
+ * Installation on every platform should be fool-proof
+ * Ditch custom installers if at all possible (e.g. by disseminating fallback
+   proxy information through KScope)
+ * Support push of upgrade notifications so we can easily get people off broken
+   version of Lantern when necessary
+
+##### Support for Institutional Lantern Use (unknown)
+
+##### Marketing/Outreach
+
+### After Release 1.1 (3 month - 9 month)
 * Implement secure chat between trusted contacts
 * Implement file sharing between trusted contacts
 * Implement secure video calling between trusted contacts
