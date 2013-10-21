@@ -112,6 +112,11 @@ the following goals (both technical and process):
 ##### Invitation (big?)
 
  * Track users' progress through the invitation and installation process
+   * Invited
+   * Installed
+   * Configured
+   * Started proxying through Lantern
+   * Track any problems they may have
  * Display invitee's progress to inviters (privacy implications?)
  * Track and display aggrevate invitation process metrics
  * Send reminder emails to invitees who haven't accepted
@@ -131,8 +136,15 @@ the following goals (both technical and process):
    proxy information through KScope)
  * Support push of upgrade notifications so we can easily get people off broken
    version of Lantern when necessary
+ * Provide great documentation on the installation process
+ * Remove requirement to be admin user to install and run Lantern?
 
 ##### Support for Institutional Lantern Use (unknown)
+
+ * Make sure Lantern runs well on a typical corporate LAN
+ * Support some form of corporate identity?
+ * Probably need to talk to potential institutional users to see what they would
+   need/want.
 
 ##### Marketing/Outreach
 
