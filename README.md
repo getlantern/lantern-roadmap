@@ -223,4 +223,8 @@ when we find ourselves needing detailed logging, it might sometimes be because
 the user can't establish connectivity, in which case it might not be possible
 for us to remotely change the log level.
 
+#### Consider integrating Tor bridges and/or making Lantern a pluggable transport for Tor.
+
+See https://www.torproject.org/docs/pluggable-transports.html.en
+
 ### Completed
