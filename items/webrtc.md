@@ -18,3 +18,7 @@ other apps can use for just NAT traversal.
 #### Tickets
 
 https://github.com/getlantern/lantern/issues/1386
+
+#### Owner
+
+[@atavism](https://github.com/atavism)
