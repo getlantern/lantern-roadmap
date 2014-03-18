@@ -5,17 +5,18 @@ is made and priorities shift as we learn more from users.
 
 ### Immediate (within 4 weeks)
 
-**[Fallback Splitting and reinviting users](items/fallback-splitting.md)** - We need to bring back in all our existing users, but in a new trust network, with strategies for dealing with censor infiltration of fallbacks. (@aranhoide)
+**[Fallback Splitting and reinviting users](items/fallback-splitting.md)** - We need to bring back in all our existing users, but in a new trust network, with strategies for dealing with censor infiltration of fallbacks. 
+([@aranhoide](https://github.com/aranhoide))
 
 **[Anonymize Jabber IDs](items/xmpp.md)** - To achieve better anonymity for our users we will not rely 
-directly on Google Talk, but instead run our own XMPP server with anonymized ID's. (@_pants)
+directly on Google Talk, but instead run our own XMPP server with anonymized ID's. ([@skivvies](https://github.com/skivvies))
 
 **[Admin Statistics Infrastructure](items/stats-infra.md)** - While our network tracks a good bit of information we have
 no good historical view in to it, or an user-friendly admin interface to review what's going on. We will implement
-a statistics tracking capability and interface. (@oxtoacart)
+a statistics tracking capability and interface. ([@oxtoacart](https://github.com/oxtoacart))
 
 **[Standalone WebRTC for NAT Traversal](items/webrtc.md)** - Use WebRTC's advanced NAT traversal, factored out to its 
-own library. (@atavism)
+own library. ([@atavism](https://github.com/atavism))
 
 
 ### Short term (1 - 3 months)
