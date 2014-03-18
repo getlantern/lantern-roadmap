@@ -5,7 +5,7 @@ Be sure to update the main roadmap to link to your item.
 
 Changes to this template are welcome.
 
-### Title of item
+### (Title of item)
 
 (1-2 paragraph overview)
 
