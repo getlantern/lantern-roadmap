@@ -1,6 +1,8 @@
+### Auto-update
+
 Modern applications like the Chrome browser as well as the main smartphone platforms have taught users to expect security updates and application upgrades to be applied automatically and transparently.  In the case of Lantern, being able to quickly push out updates to the whole user base is also important from a blocking resistance perspective, as we expect to continue to encounter situations in which an update is necessary to bypass the latest move by the censors.
 
-## Requirements
+#### Requirements
 
 Auto Update: The Lantern client should automatically detect when an update is available, download it, stage it and install it on the next restat of Lantern.
 
@@ -11,9 +13,9 @@ Incremental Update: The complete Lantern distribution is quite large.  To minimi
 - Only update changed resources or components (i.e. a specific language file, the fteproxy executable, the Lantern jar, etc)
 - Incremetally update binaries themselves (i.e. instead of downloading the whole Lantern jar, only download the changed class files, or instead of downloading the whole fteproxy executable, only download the delta of bytes)
 
-## Implementation Approaches
+#### Implementation Approaches
 
-### Git
+##### Git
 
 Git has the ability to easily apply diffs of trees of resources.  We could store our exploded distributable (e.g. the /Applications/Lantern.App) in a Git repo.  To release it, we would simply give it a tag.  Clients could then look for tags that are newer than whatever tag they're on, then `git checkout <newtag>`.
 
@@ -21,7 +23,7 @@ The git binary itself is quite large, but [libgit2](http://libgit2.github.com/) 
 
 The main downside to Git is that, from what I can tell, it doesn't support binary patches, so it wouldn't be super efficient for updating our binaries.
 
-### bsdiff and bspatch
+##### bsdiff and bspatch
 
 [bsdiff and bspatch](http://www.daemonology.net/bsdiff/) have the ability to produce binary patches that could in theory be much smaller than downloading the whole binary.  It looks like both executable are about 73 KB zipped, so that's not much download overhead.
 
