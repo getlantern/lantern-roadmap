@@ -35,7 +35,7 @@ work just as well with Lantern. We need to incorporate more and build a joint co
 **[Better documentation infrastructure](items/documentation.md)** - We are mostly done with migrating documentation to 
 Sphinx. Need to finish it so it's in master, live on the website and in transifex.
 
-**[Improve invitation experience](invitation.md)** - Do some tracking and UX improvement on users inviting others. How 
+**[Improve invitation experience](items/invitation.md)** - Do some tracking and UX improvement on users inviting others. How 
 do we get people to invite more? And to accept invitations? Look in to personalized messages, etc.
 
 ### Medium term (3 - 9 months)
