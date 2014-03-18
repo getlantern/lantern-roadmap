@@ -58,6 +58,10 @@ users, on when they reach milestones. Can start with uptime and bytes transferre
 helping people in censored countries. Right now they get a very empty map. Should figure out how to get them more
 activity faster.
 
+**[Non-google logins](items/no-google.md)** - Currently Lantern requires a google account to even use it. We should
+let people who don't have google accounts join. This will require some deep changes, but should lead to a more
+decentralized architecture.
+
 **[Jurisdiction Hopping functionality](items/jurisdiction-hopping.md)** - A feature that could help us greatly expand
 our give mode user base would be to provide a self-ish functionality of being able to view sites that are restricted in some way in one country but not another (like television shows, sporting events, etc).
 
