@@ -1,4 +1,8 @@
-This is a template for making a new roadmap item. If any fields do not feel relevant then just remove them. 
+This is a template for making a new roadmap item. Just copy and paste this to a new .md file in the same folder 
+(items/) and then fill out the fields. If any fields do not feel relevant then just remove them. 
+
+Be sure to update the main roadmap to link to your item.
+
 Changes to this template are welcome.
 
 ### Title of item
