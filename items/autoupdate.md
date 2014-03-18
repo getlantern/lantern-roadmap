@@ -15,9 +15,40 @@ Incremental Update: The complete Lantern distribution is quite large.  To minimi
 
 ### Git
 
+Git has the ability to easily apply diffs of trees of resources.  We could store our exploded distributable (e.g. the /Applications/Lantern.App) in a Git repo.  To release it, we would simply give it a tag.  Clients could then look for tags that are newer than whatever tag they're on, then `git checkout <newtag>`.
 
-### bsdiff/bspatch
+The git binary itself is quite large, but [libgit2](http://libgit2.github.com/) is only about 420 KB compressed.  We could write a little C program that uses libgit2 to bootstrap the installation/updating of Lantern.
 
-http://www.daemonology.net/bsdiff/
+The main downside to Git is that, from what I can tell, it doesn't support binary patches, so it wouldn't be super efficient for updating our binaries.
+
+### bsdiff and bspatch
+
+[bsdiff and bspatch](http://www.daemonology.net/bsdiff/) have the ability to produce binary patches that could in theory be much smaller than downloading the whole binary.  It looks like both executable are about 73 KB zipped, so that's not much download overhead.
+
+We could combine bspatch with the Git approach by storing the original full binary in Git, and storing all updates to that binary as patches that the client applies using bspatch.  For new client installations, we could maintain separate branches that each have the full binary as of that release.  Each release ends up with its own branch, that gets updated with patches for that branch.
+
+Simplified example:
+
+2.0.0/ (branch)
+  lantern.exe
+  patches/
+    2.0.1.patch
+    2.0.2.patch
+    2.1.0.patch
+    2.1.1.patch
+    2.1.2.patch
+2.1.0/ (branch)
+  lantern.exe
+  patches/
+    2.1.1.patch
+    2.1.2.patch
+
+To avoid growing these patch lists ad-infinitum, we could have clients checkout a whole new branch occasionally, thereby bringing them onto a new patch train.  As long as we're properly using Git to track file changes/renames, this checkout shouldn't be too expensive because it would only grab things that are actually new.
+
+
+
+
+
+
 
 
