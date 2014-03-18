@@ -14,6 +14,9 @@ directly on Google Talk, but instead run our own XMPP server with anonymized ID'
 no good historical view in to it, or an user-friendly admin interface to review what's going on. We will implement
 a statistics tracking capability and interface. (@oxtoacart)
 
+**[Standalone WebRTC for NAT Traversal](items/webrtc.md)** - Use WebRTC's advanced NAT traversal, factored out to its 
+own library. (@atavism)
+
 
 ### Short term (1 - 3 months)
 
