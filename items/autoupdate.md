@@ -31,6 +31,7 @@ We could combine bspatch with the Git approach by storing the original full bina
 
 Simplified example:
 
+```
 2.0.0/ (branch)
   lantern.exe
   patches/
@@ -44,6 +45,7 @@ Simplified example:
   patches/
     2.1.1.patch
     2.1.2.patch
+```
 
 To avoid growing these patch lists ad-infinitum, we could have clients checkout a whole new branch occasionally, thereby bringing them onto a new patch train.  As long as we're properly using Git to track file changes/renames, this checkout shouldn't be too expensive because it would only grab things that are actually new.
 
