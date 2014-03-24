@@ -49,9 +49,9 @@ Simplified example:
 
 To avoid growing these patch lists ad-infinitum, we could have clients checkout a whole new branch occasionally, thereby bringing them onto a new patch train.  As long as we're properly using Git to track file changes/renames, this checkout shouldn't be too expensive because it would only grab things that are actually new.
 
-IMPORTANT NOTE ABOUT BSDIFF
+IMPORTANT NOTE ABOUT BSDIFF AND UPX COMPRESSED EXECUTABLES
 
-bsdiff works much better on uncompressed files than compressed.  I ran a test with an executable that had a very minor change.  Using bsdiff on the uncompress executables resulted in an 80kb patch.  Using bsdiff on executables that had been compressed with upx resulted in a 942kb patch, more than 10x as large!
+bsdiff works much better on uncompressed executables than compressed.  I ran a test with an executable that had a very minor change.  Using bsdiff on the uncompressed executables resulted in an 80kb patch.  Using bsdiff on executables that had been compressed with upx resulted in a 942kb patch, more than 10x as large!
 
 
 
