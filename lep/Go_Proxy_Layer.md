@@ -27,9 +27,9 @@ Proxying HTTP traffic is central to Lantern's functioning.  Lantern relies on
 a proxy local to the user's browser.  It also uses proxies on other hosts,
 including Lantern peers, servers hosted by Lantern and ideally servers hosted by
 other parties as well.  Team Lantern's ability to inovate in this area, from
-tweaking details of the HTTP traffic, to customizing TLS, to mimicking off-the-
-shelf servers, to using custom protocols in place of TCP, a lot of the work of
-staying blocking-resistant happens at this layer.  This is also the most
+tweaking details of the HTTP traffic, to customizing TLS, to mimicking
+off-the-shelf servers, to using custom protocols in place of TCP, a lot of the
+work of staying blocking-resistant happens at this layer.  This is also the most
 performance critical part of the Lantern system, as it affects the user's
 browsing performance and affects Team Lantern's ability to cost effectively
 provide cloud-based proxies.
@@ -114,7 +114,7 @@ directly from Lantern, in which case it would essentially function as a
 replacement for LittleProxy.  Several factors should be taken into account when
 making this decision.
 
-### What would it take to make Lantern work with CloudFlare
+### What would it take to make Lantern work with CloudFlare?
 
 1. Update LittleProxy to support MITM with dynamic certificate generation based
    on the host:port supplied in the CONNECT requests.  LittleProxy already has
@@ -268,9 +268,9 @@ the vanilla Lantern test.
    should have as little impact as possible, especially when it's not busy
    serving a workload.
 
-4. Potentially lower active memory consumption(17) - This is a boon both to end-
-   users as well as to Lantern's proxy hosting operations, which are memory-
-   constrainted at the moment.
+4. Potentially lower active memory consumption(17) - This is a boon both to
+   end-users as well as to Lantern's proxy hosting operations, which are
+   memory-constrainted at the moment.
 
 ### Will Team Lantern be able to maintain and hack on Go code?
 
