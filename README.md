@@ -79,6 +79,8 @@ figure out a good user experience for our users, and be sure we're contributing 
 **[Collapse Give and Get Mode](items/collapse-give-get.md)** - The distinction between give and get is not great, and 
 ideally everyone can serve as give in some cases and get in others.
 
+**[Security Audit](items/security-audit.md)** - We'll start a security audit of core Lantern components.
+
 ### Long term ( 9 - 24 months)
 
 **[Stripped down fallbacks](items/stripped-fallbacks.md)** - Our fallbacks are currently a full Lantern version, but don't use the full Lantern capabilities. We should investigate if a lighter version might help.
