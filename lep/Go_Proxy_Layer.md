@@ -17,8 +17,8 @@ CloudFlare, directly addressing some existing roadmap items, making progress
 towards other roadmap items and making it generally easier to maintain, innovate
 on and get contributions to Lantern's core networking features in the future.
 The big caveat here is that a lot of the longer-term benefits are only realized
-by switching completely from Java to Go, so moving in that direction now most
-likely only makes sense if we're open, maybe even committed to, that happening
+by switching Lantern completely from Java to Go, so moving in that direction now
+only makes sense if Team Lantern is committed to switching off Java completely
 at some point.
 
 ## Background
