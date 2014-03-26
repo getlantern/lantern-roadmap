@@ -260,15 +260,17 @@ the vanilla Lantern test.
    Lantern, but LittleProxy+Lantern would also grow as we add host spoofing to
    them.
 
-2. Agility - many of the benefits already listed translate to faster innovation
+2. Cheaper Security Audit - Less code means less for an auditer to review.
+
+3. Agility - many of the benefits already listed translate to faster innovation
    and feature development in Lantern.
 
-3. Lower idle memory consumption - Go's idle memory consumption is lower than
+4. Lower idle memory consumption - Go's idle memory consumption is lower than
    Java's.  This is particularly nice for Give mode users for whom Lantern
    should have as little impact as possible, especially when it's not busy
    serving a workload.
 
-4. Potentially lower active memory consumption(17) - This is a boon both to
+5. Potentially lower active memory consumption(17) - This is a boon both to
    end-users as well as to Lantern's proxy hosting operations, which are
    memory-constrainted at the moment.
 
