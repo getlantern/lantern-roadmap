@@ -274,9 +274,9 @@ the vanilla Lantern test.
 
 ### Will Team Lantern be able to maintain and hack on Go code?
 
-Ox is currently the only team member who has been doing a lot of Go programming,
-although Go is still relatively new to him too.  Aranhoide and Reginald have
-gotten to review the statshub codebase, which is written in Go.
+Ox is currently the only team member who has been doing Go programming, although
+Go is still relatively new to him too.  Aranhoide and Reginald have gotten to
+review the statshub codebase, which is written in Go.
 
 One of the benefits that organizations using Go sometimes site is that the
 language itself is easy to learn quickly(18).
