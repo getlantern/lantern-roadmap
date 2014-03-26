@@ -1,8 +1,10 @@
 #LEP 002 - Go Based Proxying Layer
 
-Date:   March 26, 2014<br/>
-Status: Draft<br/>
-Author: Ox Cart<br/>
+Date:   March 26, 2014
+
+Status: Draft
+
+Author: Ox Cart
 
 ## Proposal
 
