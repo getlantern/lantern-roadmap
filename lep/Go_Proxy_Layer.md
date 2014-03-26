@@ -1,12 +1,8 @@
 #LEP 002 - Go Based Proxying Layer
 
-```
 Date:   March 26, 2014
-
 Status: Draft
-
 Author: Ox Cart
-```
 
 ## Proposal
 
@@ -18,6 +14,10 @@ reducing the effort for supporting host spoofing with services other than
 CloudFlare, directly addressing some existing roadmap items, making progress
 towards other roadmap items and making it generally easier to maintain, innovate
 on and get contributions to Lantern's core networking features in the future.
+The big caveat here is that a lot of the longer-term benefits are only realized
+by switching completely from Java to Go, so moving in that direction now most
+likely only makes sense if we're open, maybe even committed to, that happening
+at some point.
 
 ## Background
 
