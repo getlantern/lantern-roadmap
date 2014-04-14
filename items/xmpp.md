@@ -1,6 +1,6 @@
 ### Anonymize Jabber IDs
 
-Users who don't trust one another and aren't even on one another's rosters still 
+Users who aren't Lantern Friends with one another and aren't even on one another's rosters still
 exchange XMPP messages (such as kaleidoscope advertisements or direct connection negotiation 
 messages) directly rather than through an anonymizing relay. The way this affects UX is users 
 will see email addresses, names, and profile photos (and formerly IP addresses) not just of 
@@ -14,7 +14,7 @@ directly on Google Talk, but instead run our own XMPP server with anonymized ID'
 (ideally user driven, and if not in 'immediate' can include 'nice to haves' that aren't hugely required)
 
 #### Tech research
-Looked in to prosody and ejabberid. Ended up with ejabberid (more thoughts here are welcome).
+Looked into prosody and ejabberd.
 
 #### Implementation approach
 Set up xmpp.getlantern.org, anonymize from google talk through there.
