@@ -16,3 +16,7 @@ lantern at a fallback server they or a friend set up. There are some open questi
 trust network. Part of the appeal is to have a more decentralized architecture that does not rely on registering
 in the Brave New Software network, but there are lots of implications of this. An alternative is to require login
 for user provided fallbacks.
+
+#### Tickets
+
+https://github.com/getlantern/lantern/issues/1187
