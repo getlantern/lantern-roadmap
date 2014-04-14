@@ -4,18 +4,14 @@ We are mostly done with migrating documentation to Sphinx. Need to finish it so 
 live on the website and in transifex.
 
 #### Requirements
-The majority of this work is already done, with a successful port to sphinx. We just need to get
-it all merged and building by default, linked to from the website, and in transifex. A nice
-to have would be to have nicer css on the sphinx pages that more closely matches the main lantern
-pages.
+
+This is 90% complete, thanks to Todd Levinson, see http://tlevinson.github.io/lantern/doc/en/user/html/Using-Lantern.html
+
+We need to merge his code in to master, get it set up in an automated build, and link to from the website.
+
+Nice to have's would be getting the markdown pages in transifex and fixing up the CSS to more closely match the website.
 
 
-
-#### Implementation approach
-(what is to be written, what components touched, changes made)
-
-#### Wireframes
-(links to any mockups to drive GUI stuff)
 
 #### Discussion
 https://groups.google.com/forum/#!searchin/lantern-devel/sphinx/lantern-devel/QoTo0xzSzYY/qgGg8BhyxB8J
