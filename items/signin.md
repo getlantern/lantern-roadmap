@@ -15,5 +15,7 @@ Do real user testing to improve the process of sign in and invitation of friends
 
 #### Tickets
 
+https://github.com/getlantern/lantern/issues/1396
+
 #### Owner
 Niki Lauda
