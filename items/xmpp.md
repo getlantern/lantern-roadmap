@@ -18,7 +18,9 @@ directly on Google Talk, but instead run our own XMPP server with anonymized ID'
 I got Prosody and axrelay deployed and working, but hit a wall when I found that Google's XMPP servers are, incredibly, still refusing encrypted server-to-server connections. If we launched with it in this state, observers of traffic between our XMPP server and Google's could correlate relay ids with originals to defeat anonymization. I reached out to our contact at Google who initially said he would ask about it and that it should be an easy push, but that turned out not to be the case. He will be joining us on our standup this Wednesday, where we can catch up about it more.
 
 https://github.com/getlantern/axrelay#test-axrelay-with-non-google-xmpp-accounts
+
 https://github.com/getlantern/axrelay#test-axrelay-with-gmailcom-xmpp-accounts
+
 https://github.com/getlantern/axrelay#test-axrelay-with-google-apps-domains-xmpp-accounts
 
 #### Implementation approach
