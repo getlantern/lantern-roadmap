@@ -20,3 +20,4 @@ for user provided fallbacks.
 #### Tickets
 
 https://github.com/getlantern/lantern/issues/1187
+https://github.com/getlantern/lantern/issues/1207
