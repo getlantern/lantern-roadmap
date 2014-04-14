@@ -54,7 +54,9 @@ IMPORTANT NOTE ABOUT BSDIFF AND UPX COMPRESSED EXECUTABLES
 bsdiff works much better on uncompressed executables than compressed.  I ran a test with an executable that had a very minor change.  Using bsdiff on the uncompressed executables resulted in an 80kb patch.  Using bsdiff on executables that had been compressed with upx resulted in a 942kb patch, more than 10x as large!
 
 
+#### Tickets
 
+https://github.com/getlantern/lantern/issues/21
 
 
 
