@@ -31,6 +31,8 @@ the user has.
 * Number of users by total bandwidth - see like the number of people who have transferred more than 10mb, 100mb, 1gb, etc. 
 And ideally show both peer bandwidth and fallback bandwidth, and give vs get.
 
+* Number of users who have invited more than X users - explore how many users are inviting.
+
 * Number of users who have no friends outside of a censored country. And ideally be able to easily show how many degrees 
 away they need to reach an uncensored connection.
 
