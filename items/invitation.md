@@ -1,5 +1,3 @@
-
-
 ### Requirements
 
 (from previous roadmap)
@@ -25,4 +23,6 @@
 
 ### Tickets
 
-https://github.com/getlantern/lantern/issues/1432
+* https://github.com/getlantern/lantern/issues/1432
+* https://github.com/getlantern/lantern/issues/1477
+* https://github.com/getlantern/lantern/issues/580

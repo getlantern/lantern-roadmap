@@ -8,18 +8,16 @@ is made and priorities shift as we learn more from users.
 **[Fallback Splitting and reinviting users](items/fallback-splitting.md)** - We need to bring back in all our existing users, but in a new trust network, with strategies for dealing with censor infiltration of fallbacks. 
 ([@aranhoide](https://github.com/aranhoide))
 
-**[Anonymize Jabber IDs](items/xmpp.md)** - To achieve better anonymity for our users we will not rely 
-directly on Google Talk, but instead run our own XMPP server with anonymized ID's. ([@skivvies](https://github.com/skivvies))
-
-**[Admin Statistics Infrastructure](items/stats-infra.md)** - While our network tracks a good bit of information we have
-no good historical view in to it, or an user-friendly admin interface to review what's going on. We will implement
-a statistics tracking capability and interface. ([@oxtoacart](https://github.com/oxtoacart))
-
 **[Standalone WebRTC for NAT Traversal](items/webrtc.md)** - Use WebRTC's advanced NAT traversal, factored out to its 
 own library. ([@atavism](https://github.com/atavism))
 
+**[Server Name Indication tunelling](items/sni.md)** - Use SNI on TLS to proxy through online cdn systems. ([@oxtoacart](https://github.com/oxtoacart))
+
 
 ### Short term (1 - 3 months)
+
+**[Gui for Admin Stats](items/admin-gui.md)** - Extend the prototype of a stats GUI to a dashboard view to get a real time
+and cumulative view of Lantern network growth.
 
 **[Improve signin process](items/signin.md)** - There are a number of workflow improvements we could make to ease 
 setting up Lantern, for both give and get mode users.
@@ -79,6 +77,8 @@ figure out a good user experience for our users, and be sure we're contributing 
 **[Collapse Give and Get Mode](items/collapse-give-get.md)** - The distinction between give and get is not great, and 
 ideally everyone can serve as give in some cases and get in others.
 
+**[Security Audit](items/security-audit.md)** - We'll start a security audit of core Lantern components.
+
 ### Long term ( 9 - 24 months)
 
 **[Stripped down fallbacks](items/stripped-fallbacks.md)** - Our fallbacks are currently a full Lantern version, but don't use the full Lantern capabilities. We should investigate if a lighter version might help.
@@ -104,4 +104,15 @@ source contribution.
 **Switch to Gradle Build System** - Maven to be annoying and unintuitive.  [Gradle](http://www.gradle.org/)
 is much nicer to use.
 
+### Deferred
+
+**[Anonymize Jabber IDs](items/xmpp.md)** - To achieve better anonymity for our users we will not rely 
+directly on Google Talk, but instead run our own XMPP server with anonymized ID's. ([@skivvies](https://github.com/skivvies))
+
+
 ### Completed
+
+**[Admin Statistics Infrastructure](items/stats-infra.md)** - While our network tracks a good bit of information we have
+no good historical view in to it, or an user-friendly admin interface to review what's going on. We will implement
+a statistics tracking capability and interface. ([@oxtoacart](https://github.com/oxtoacart))
+

@@ -53,8 +53,21 @@ IMPORTANT NOTE ABOUT BSDIFF AND UPX COMPRESSED EXECUTABLES
 
 bsdiff works much better on uncompressed executables than compressed.  I ran a test with an executable that had a very minor change.  Using bsdiff on the uncompressed executables resulted in an 80kb patch.  Using bsdiff on executables that had been compressed with upx resulted in a 942kb patch, more than 10x as large!
 
+#### Proposed Phases
 
+##### Phase 1: Full Installer Download in Background
 
+We would have to prompt the user to restart and reinstall Lantern in part because we'll prompt for an admin password. Lantern should also already know its mode so could pass the installer a flag indicating the mode and whether or not we need to prompt for admin.
+
+Ideally whether or not the update gets installed is out of the user's hands. Triggering an automatic restart after 5 minutes of inactivity could help with give mode users who don't necessarily need admin.
+
+##### Phase 2: Full Binary diff-based install
+
+Still download in the background but a smaller binary diff. We would just install it on restart with some visual indicator an update exists.
+
+#### Tickets
+
+https://github.com/getlantern/lantern/issues/21
 
 
 
