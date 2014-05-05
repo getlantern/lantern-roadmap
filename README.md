@@ -11,7 +11,7 @@ is made and priorities shift as we learn more from users.
 **[Standalone WebRTC for NAT Traversal](items/webrtc.md)** - Use WebRTC's advanced NAT traversal, factored out to its 
 own library. ([@atavism](https://github.com/atavism))
 
-**[Server Name Indication tunelling](items/sni.md)** - Use SNI on TLS to proxy through online cdn systems. ([@oxtoacart](https://github.com/oxtoacart))
+**[Server Name Indication tunelling](items/sni.md)** - Use SNI on TLS to proxy through online cdn systems. ([@oxtoacart](https://github.com/oxtoacart) and [@skivvies](https://github.com/skivvies))
 
 
 ### Short term (1 - 3 months)
@@ -107,7 +107,7 @@ is much nicer to use.
 ### Deferred
 
 **[Anonymize Jabber IDs](items/xmpp.md)** - To achieve better anonymity for our users we will not rely 
-directly on Google Talk, but instead run our own XMPP server with anonymized ID's. ([@skivvies](https://github.com/skivvies))
+directly on Google Talk, but instead run our own XMPP server with anonymized ID's. 
 
 
 ### Completed
