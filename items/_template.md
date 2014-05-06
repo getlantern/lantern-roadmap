@@ -12,11 +12,8 @@ Changes to this template are welcome.
 #### Requirements
 (ideally user driven, and if not in 'immediate' can include 'nice to haves' that aren't hugely required)
 
-#### Tech research
-(any background discussion, links, tech to use, etc)
-
-#### Implementation approach
-(what is to be written, what components touched, changes made)
+#### LEP
+(Link to one or more LEP's that are needed to bring this change in)
 
 #### Wireframes
 (links to any mockups to drive GUI stuff)
