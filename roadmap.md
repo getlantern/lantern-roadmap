@@ -1,6 +1,6 @@
 ## Introduction
 
-This document contains the current state of the Lantern roadmap. See the [readme](readme.md) for more information
+This document contains the current state of the Lantern roadmap. See the [README](README.md) for more information
 on how to use and update it.
 
 ### Immediate (within 4 weeks)
