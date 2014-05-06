@@ -9,11 +9,11 @@ Easiest place to start would be supporting Mozilla persona. But we should likely
 create an architecture that doesn't require as much logging in.
 
 
-#### Tech research
-(any background discussion, links, tech to use, etc)
+#### LEP
 
-#### Implementation approach
-(what is to be written, what components touched, changes made)
+The [Simple Signaling](../lep/Simple_Signaling_DRAFT.md) proposal has some stuff related to the backend
+of the changes needed. We likely need at least another proposal for other aspects (like the front end)
+as this ends up touching a number of core architecture pieces.
 
 #### Wireframes
 (links to any mockups to drive GUI stuff)
