@@ -41,6 +41,9 @@ Sphinx. Need to finish it so it's in master, live on the website and in transife
 **[Improve invitation experience](items/invitation.md)** - Do some tracking and UX improvement on users inviting others. How 
 do we get people to invite more? And to accept invitations? Look in to personalized messages, etc.
 
+**[Next-generation signaling](https://github.com/getlantern/lantern-roadmap/blob/master/lep/DRAFT/003_Simple_Signaling.md) - XMPP has scaling issues, doesn't work with flashlight, and Google is phasing it out anyway. Still in draft, but [anonymizing users' addresses](items/xmpp.md) for peers that aren't direct friends would fall out of this.
+
+
 ### Medium term (3 - 9 months)
 
 **[Non-admin installation](items/non-admin-install.md)** - Right now you need to be an admin to install Lantern. There is
@@ -106,8 +109,7 @@ is much nicer to use.
 
 ### Deferred
 
-**[Anonymize Jabber IDs](items/xmpp.md)** - To achieve better anonymity for our users we will not rely 
-directly on Google Talk, but instead run our own XMPP server with anonymized ID's. 
+(None currently)
 
 
 ### Completed
