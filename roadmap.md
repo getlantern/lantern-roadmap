@@ -41,7 +41,7 @@ Sphinx. Need to finish it so it's in master, live on the website and in transife
 **[Improve invitation experience](items/invitation.md)** - Do some tracking and UX improvement on users inviting others. How 
 do we get people to invite more? And to accept invitations? Look in to personalized messages, etc.
 
-**[Next-generation signaling](https://github.com/getlantern/lantern-roadmap/blob/master/lep/DRAFT/003_Simple_Signaling.md) - XMPP has scaling issues, doesn't work with flashlight, and Google is phasing it out anyway. Still in draft, but [anonymizing users' addresses](items/xmpp.md) for peers that aren't direct friends would fall out of this.
+**[Next-generation signaling](https://github.com/getlantern/lantern-roadmap/blob/master/lep/DRAFT/003_Simple_Signaling.md)** - XMPP has scaling issues, doesn't work with flashlight, and Google is phasing it out anyway. Still in draft, but [anonymizing users' addresses](items/xmpp.md) for peers that aren't direct friends would fall out of this.
 
 
 ### Medium term (3 - 9 months)
