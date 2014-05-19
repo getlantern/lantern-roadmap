@@ -92,6 +92,8 @@ should let censored users serve as proxies for one another.
 
 ### Ideas
 
+**Pursue Contacts in Hosting Community** - Ox's neighbor has some connections at a large hosting provider who sometimes donates reduced cost or free hosting to startups.  We should take advantage of such in-kind donations when available, and also build relationships with the hosting community to better understand and address the problem of IP exhaustion as it relates to blocking.
+
 **Encrypted Video Chat** - Let users do video chat with one another. Likely as a separate product, but using the Lantern
 infrastructure.
 
