@@ -1,6 +1,6 @@
 ### Whitelist for Give mode
 
-Many users are excited to share their connection, but not for any possible use. We hould give 
+Many users are excited to share their connection, but not for any possible use. We should give 
 users the option to only let their censored proxy buddies access certain sites.
 
 #### Requirements
