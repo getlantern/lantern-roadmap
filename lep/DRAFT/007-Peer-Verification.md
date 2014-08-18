@@ -18,11 +18,8 @@ experienced a quality of service challenge where some of those give mode peers s
 able to proxy traffic. The cause is unclear, but possibilities include:
 
 1. There's a bug in Lantern (see, for example, https://github.com/getlantern/lantern/issues/1729)
-
 1. Their machines simply aren't powerful enough to handle the load
-
 1. They don't have enough bandwidth
-
 1. They are in fact adversaries attempting to attack the network
 
 ## Proposed Solution
