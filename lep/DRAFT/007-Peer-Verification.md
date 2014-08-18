@@ -42,5 +42,5 @@ traffic.
 
 One challenge of the above approach is that these are hosts running Flashlight and not 
 simply ordinary HTTP proxies. As a result, the testing code itself needs to implement 
-the full client side of flashlight.
+the full client side of flashlight.  Note - a lot of the logic is actually in [enproxy](https://github.com/getlantern/enproxy) which implements the http.Conn interface and should be easy enough to reuse outside of flashlight.
 
