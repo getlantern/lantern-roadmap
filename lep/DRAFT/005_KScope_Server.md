@@ -90,6 +90,8 @@ This server could be implemented in Go using this go-based [gokscope][] as
 a starting point.  Much like [waddell][], it could use [framed][] to provide a
 basic TCP-based protocol for communicating with clients.
 
+Authentication can be performed using PKI, as described in LEP 008.
+
 ### Client
 
 1. Send own kscope ads to new server
@@ -105,3 +107,5 @@ basic TCP-based protocol for communicating with clients.
 [waddell]: (https://github.com/getlantern/waddell) "waddell"
 
 [framed]: (https://github.com/getlantern/framed) "framed"
+
+[janus]: ()
