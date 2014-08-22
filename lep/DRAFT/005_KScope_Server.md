@@ -86,7 +86,7 @@ The kscope server needs to:
 6. Be able to cache kscope ads for future delivery to clients
 7. Implement the kscope algorithm
 
-This server could be implemented in Go using this go-based [gokscope][] as
+This server could be implemented in Go using this go-based [kscope] as
 a starting point.  Much like [waddell][], it could use [framed][] to provide a
 basic TCP-based protocol for communicating with clients.
 
@@ -100,12 +100,12 @@ Authentication can be performed using PKI, as described in LEP 008.
 
 
 
-[kscope]: (http://kscope.news.cs.nyu.edu/pub/TR-2008-918.pdf) "Kaleidoscope"
+[kscope]: http://kscope.news.cs.nyu.edu/pub/TR-2008-918.pdf "Kaleidoscope"
 
-[gokscope]: (https://github.com/getlantern/kscope) "kscope library"
+[gokscope]: https://github.com/getlantern/kscope "kscope library"
 
-[waddell]: (https://github.com/getlantern/waddell) "waddell"
+[waddell]: https://github.com/getlantern/waddell "waddell"
 
-[framed]: (https://github.com/getlantern/framed) "framed"
+[framed]: https://github.com/getlantern/framed "framed"
 
 [janus]: ()
