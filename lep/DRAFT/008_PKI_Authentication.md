@@ -65,7 +65,7 @@ certificate meets these criteria, janus issues a certificate and sends an email
 to the email address indicated in the SAN.  That email includes:
 
 1. A link to the local Lantern client that encodes the certificate as a URL
-   (e.g. http://localhost:15342/AddCert/&lt;PEM Encoded CERT&gt;)
+   (e.g. `http://localhost:15342/AddCert/<PEM Encoded CERT>`)
 
 2. The certificate as an attachment
 
