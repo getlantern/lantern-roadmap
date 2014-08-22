@@ -64,8 +64,8 @@ SAN, does not contain a [Subject] and does not contain any other SANs.  If the
 certificate meets these criteria, janus issues a certificate and sends an email
 to the email address indicated in the SAN.  That email includes:
 
-1. A link to the local Lantern client (e.g. https://localhost:15342) that
-   encodes the certificate as a query string parameter
+1. A link to the local Lantern client that encodes the certificate as a URL
+   (e.g. http://localhost:15342/AddCert/<PEM Encoded CERT>)
 
 2. The certificate as an attachment
 
