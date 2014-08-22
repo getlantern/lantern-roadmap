@@ -56,7 +56,7 @@ key.
 
 When a user signs in using a Lantern client, she simply enters her email
 address. The Lantern client generates a CSR using its own private key,
-populating the email address as a [Subject Alternative Name].  The Lantern
+populating the email address as a [Subject Alternative Name] (SAN).  The Lantern
 client then submits this CSR to janus.
 
 When janus receives a CSR, it verifies that the CSR contains an email address
