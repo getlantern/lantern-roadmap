@@ -16,7 +16,7 @@ on a server instead of individual clients in order to support:
 
 ## Background
 
-Lantern peers find out about available peer proxies via the [kscope][] algorithm,
+Lantern peers find out about available peer proxies via the [Kaleidoscope] algorithm,
 which involves ads being forwarded along a chain of trusted peers along
 randomized but stable routes.
 
@@ -86,7 +86,7 @@ The kscope server needs to:
 6. Be able to cache kscope ads for future delivery to clients
 7. Implement the kscope algorithm
 
-This server could be implemented in Go using this go-based [Kaleidoscope] as
+This server could be implemented in Go using this go-based [kscope library] as
 a starting point.  Much like [waddell][], it could use [framed][] to provide a
 basic TCP-based protocol for communicating with clients.
 
@@ -102,7 +102,7 @@ Authentication can be performed using PKI, as described in LEP 008.
 
 [Kaleidoscope]: http://kscope.news.cs.nyu.edu/pub/TR-2008-918.pdf
 
-[gokscope]: https://github.com/getlantern/kscope "kscope library"
+[kscope library]: https://github.com/getlantern/kscope "kscope library"
 
 [waddell]: https://github.com/getlantern/waddell "waddell"
 
