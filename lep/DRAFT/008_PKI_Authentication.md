@@ -78,6 +78,11 @@ includes:
 If Lantern is running, clicking the link will automatically import the
 certificate, at which point the sign-in process is complete.
 
+Now, when the Lantern client communicates with Lantern cloud services using TLS,
+it identifies itself by supplying its certificate as a client certificate. Since
+this certificate contains the user's email address as the SAN, Lantern cloud
+services know whose behalf the client is working on.
+
 ![Sequence Diagram](http://www.websequencediagrams.com/cgi-bin/cdraw?lz=dGl0bGUgU2lnbiBJbiBhbmQgQXV0aGVudGljYXRpb24KClVzZXIgLT4gTGFudGVybjoAJQgKAAoHAA8NQ3JlYXRlIFByaXZhdGUgS2V5AAscQ1NSIHcvIEVtYWlsIFNBTgBHDGphbnVzOiBDU1IKAAYFAAkLVmFsaWQAOQcAEwoAQQU6IExpbmsgd2l0aCBlbWJlZGRlZCBjZXJ0aWZpY2F0ZQCBRQkAJwdDbGljayBvbiBsaW5rCgCBAwYAgWAMT3BlbiBVUkwAgVgVU2F2ZSBDAFILAIIHDGtzY29wZTogVExTIGNvbm5lY3QAgREGAIECDAAfBgAjDElkZW50aWZ5IHVzZXIgYnkAghILABsSRG8gd29yayAuLi4&s=vs2010)
 
 [Source Here](http://www.websequencediagrams.com/?lz=dGl0bGUgU2lnbiBJbiBhbmQgQXV0aGVudGljYXRpb24KClVzZXIgLT4gTGFudGVybjoAJQgKAAoHAA8NQ3JlYXRlIFByaXZhdGUgS2V5AAscQ1NSIHcvIEVtYWlsIFNBTgBHDGphbnVzOiBDU1IKAAYFAAkLVmFsaWQAOQcAEwoAQQU6IExpbmsgd2l0aCBlbWJlZGRlZCBjZXJ0aWZpY2F0ZQCBRQkAJwdDbGljayBvbiBsaW5rCgCBAwYAgWAMT3BlbiBVUkwAgVgVU2F2ZSBDAFILAIIHDGtzY29wZTogVExTIGNvbm5lY3QAgREGAIECDAAfBgAjDElkZW50aWZ5IHVzZXIgYnkAghILABsSRG8gd29yayAuLi4&s=vs2010)
