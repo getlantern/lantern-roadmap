@@ -90,6 +90,6 @@ services know whose behalf the client is working on.
 
 [PKI]: http://en.wikipedia.org/wiki/Public_key_infrastructure
 
-[Subject Alternate Name]: http://tools.ietf.org/html/rfc2459#section-4.2.1.7
+[Subject Alternative Name]: http://tools.ietf.org/html/rfc2459#section-4.2.1.7
 
 [Subject]: http://tools.ietf.org/html/rfc2459#section-4.1.2.6
