@@ -10,16 +10,12 @@ own library. ([@atavism](https://github.com/atavism))
 
 **[Next-generation signaling](https://github.com/getlantern/lantern-roadmap/blob/master/lep/DRAFT/003_Simple_Signaling.md)** - XMPP has scaling issues, doesn't work with flashlight, and Google is phasing it out anyway. Still in draft, but [anonymizing users' addresses](items/xmpp.md) for peers that aren't direct friends would fall out of this.
 
-
-**[Gui for Admin Stats](items/admin-gui.md)** - Extend the prototype of a stats GUI to a dashboard view to get a real time and cumulative view of Lantern network growth.
-
 **[Improve signin process](items/signin.md)** - There are a number of workflow improvements we could make to ease 
 setting up Lantern, for both give and get mode users.
 
-
 **[Auto-update](items/autoupdate.md)** - Right now we make users download new versions of Lantern. We should follow the lead of chrome and firefox and just automatically update for our users when possible.
 
-**[Interoperable Transports](items/transports.md)** - Tor has a pluggable transports API, but the core transports can work just as well with Lantern. We need to incorporate more and build a joint community around transports.
+**[Stats for kaleidoscope, signaling, and NAT traversion](items/stats.md)** - We want to add more detailed metrics for kscope, signaling, and NAT traversal so we know how well they're performing.
 
 **[Better documentation infrastructure](items/documentation.md)** - We are mostly done with migrating documentation to Sphinx. Need to finish it so it's in master, live on the website and in transifex.
 
@@ -28,6 +24,10 @@ setting up Lantern, for both give and get mode users.
 
 
 ### Medium term (3 - 9 months)
+
+**[Interoperable Transports](items/transports.md)** - Tor has a pluggable transports API, but the core transports can work just as well with Lantern. We need to incorporate more and build a joint community around transports.
+
+**[Extended Gui for Admin Stats](items/admin-gui.md)** - Extend the prototype of a stats GUI to a dashboard view to get a real time and cumulative view of Lantern network growth.
 
 **[Enable user set up of Fallbacks](items/user-fallbacks.md)** - Many users have access to machines that can be on
 24/7 and serve as fallbacks. But we need to make it easier for them to set up and have a fallback that is not controlled by Brave New Software.
