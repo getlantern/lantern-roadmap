@@ -24,8 +24,6 @@ setting up Lantern, for both give and get mode users.
 
 **[Improve invitation experience](items/invitation.md)** - Do some tracking and UX improvement on users inviting others. How do we get people to invite more? And to accept invitations? Look in to personalized messages, etc.
 
-**[Interoperable Transports](items/transports.md)** - Tor has a pluggable transports API, but the core transports can work just as well with Lantern. We need to incorporate more and build a joint community around transports.
-
 **[Extended Gui for Admin Stats](items/admin-gui.md)** - Extend the prototype of a stats GUI to a dashboard view to get a real time and cumulative view of Lantern network growth.
 
 **[Enable user set up of Fallbacks](items/user-fallbacks.md)** - Many users have access to machines that can be on
@@ -44,6 +42,8 @@ setting up Lantern, for both give and get mode users.
 **[Map Improvements and alternatives](items/map.md)** - Our map could be improved, to let users zoom in, be more accurate, etc. We should also add some non-map visualizations to show things that aren't best through a map.
 
 **[Security Audit](items/security-audit.md)** - We'll start a security audit of core Lantern components.
+
+**[Interoperable Transports](items/transports.md)** - Tor has a pluggable transports API, but the core transports can work just as well with Lantern. We need to incorporate more and build a joint community around transports.
 
 ### Long term ( 9 - 24 months)
 
