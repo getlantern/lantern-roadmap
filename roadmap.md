@@ -3,18 +3,10 @@
 This document contains the current state of the Lantern roadmap. See the [README](README.md) for more information
 on how to use and update it.
 
-### Immediate (within 4 weeks)
-
-**[Fallback Splitting and reinviting users](items/fallback-splitting.md)** - We need to bring back in all our existing users, but in a new trust network, with strategies for dealing with censor infiltration of fallbacks. 
-([@aranhoide](https://github.com/aranhoide))
+### Short term (1 - 3 months)
 
 **[Standalone WebRTC for NAT Traversal](items/webrtc.md)** - Use WebRTC's advanced NAT traversal, factored out to its 
 own library. ([@atavism](https://github.com/atavism))
-
-**[Server Name Indication tunelling](items/sni.md)** - Use SNI on TLS to proxy through online cdn systems. ([@oxtoacart](https://github.com/oxtoacart) and [@skivvies](https://github.com/skivvies))
-
-
-### Short term (1 - 3 months)
 
 **[Gui for Admin Stats](items/admin-gui.md)** - Extend the prototype of a stats GUI to a dashboard view to get a real time
 and cumulative view of Lantern network growth.
