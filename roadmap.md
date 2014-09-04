@@ -5,18 +5,17 @@ on how to use and update it.
 
 ### Short term (1 - 3 months)
 
-**[Standalone WebRTC for NAT Traversal](items/webrtc.md)** - Use WebRTC's advanced NAT traversal, factored out to its 
+**[Standalone WebRTC for NAT Traversal](items/webrtc.md) (aka Natty)** - Use WebRTC's advanced NAT traversal, factored out to its 
 own library. ([@atavism](https://github.com/atavism))
+
+**[Next-generation signaling](https://github.com/getlantern/lantern-roadmap/blob/master/lep/DRAFT/003_Simple_Signaling.md)** - XMPP has scaling issues, doesn't work with flashlight, and Google is phasing it out anyway. Still in draft, but [anonymizing users' addresses](items/xmpp.md) for peers that aren't direct friends would fall out of this.
+
 
 **[Gui for Admin Stats](items/admin-gui.md)** - Extend the prototype of a stats GUI to a dashboard view to get a real time and cumulative view of Lantern network growth.
 
 **[Improve signin process](items/signin.md)** - There are a number of workflow improvements we could make to ease 
 setting up Lantern, for both give and get mode users.
 
-**[Enable user set up of Fallbacks](items/user-fallbacks.md)** - Many users have access to machines that can be on
-24/7 and serve as fallbacks. But we need to make it easier for them to set up and have a fallback that is not controlled by Brave New Software.
-
-**[Improve whitelist experience](items/whitelist.md)** - There are a few low hanging whitelist improvements we could make, like easing the process of adding to the whitelist (example browser plugin?) and including whitelist info in our s3 config.
 
 **[Auto-update](items/autoupdate.md)** - Right now we make users download new versions of Lantern. We should follow the lead of chrome and firefox and just automatically update for our users when possible.
 
@@ -26,10 +25,14 @@ setting up Lantern, for both give and get mode users.
 
 **[Improve invitation experience](items/invitation.md)** - Do some tracking and UX improvement on users inviting others. How do we get people to invite more? And to accept invitations? Look in to personalized messages, etc.
 
-**[Next-generation signaling](https://github.com/getlantern/lantern-roadmap/blob/master/lep/DRAFT/003_Simple_Signaling.md)** - XMPP has scaling issues, doesn't work with flashlight, and Google is phasing it out anyway. Still in draft, but [anonymizing users' addresses](items/xmpp.md) for peers that aren't direct friends would fall out of this.
 
 
 ### Medium term (3 - 9 months)
+
+**[Enable user set up of Fallbacks](items/user-fallbacks.md)** - Many users have access to machines that can be on
+24/7 and serve as fallbacks. But we need to make it easier for them to set up and have a fallback that is not controlled by Brave New Software.
+
+**[Improve whitelist experience](items/whitelist.md)** - There are a few low hanging whitelist improvements we could make, like easing the process of adding to the whitelist (example browser plugin?) and including whitelist info in our s3 config.
 
 **[Non-admin installation](items/non-admin-install.md)** - Right now you need to be an admin to install Lantern. There is
 no reason for this for give mode users, so we shouldn't require it. Can defer the call for admin rights for all users.
