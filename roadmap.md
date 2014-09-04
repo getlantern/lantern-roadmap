@@ -43,11 +43,11 @@ setting up Lantern, for both give and get mode users.
 
 **[Map Improvements and alternatives](items/map.md)** - Our map could be improved, to let users zoom in, be more accurate, etc. We should also add some non-map visualizations to show things that aren't best through a map.
 
-**[Collapse Give and Get Mode](items/collapse-give-get.md)** - The distinction between give and get is not great, and ideally everyone can serve as give in some cases and get in others.
-
 **[Security Audit](items/security-audit.md)** - We'll start a security audit of core Lantern components.
 
 ### Long term ( 9 - 24 months)
+
+**[Collapse Give and Get Mode](items/collapse-give-get.md)** - The distinction between give and get is not great, and ideally everyone can serve as give in some cases and get in others.
 
 **[Improve whitelist experience](items/whitelist.md)** - There are a few low hanging whitelist improvements we could make, like easing the process of adding to the whitelist (example browser plugin?) and including whitelist info in our s3 config.
 
