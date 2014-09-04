@@ -19,11 +19,11 @@ setting up Lantern, for both give and get mode users.
 
 **[Better documentation infrastructure](items/documentation.md)** - We are mostly done with migrating documentation to Sphinx. Need to finish it so it's in master, live on the website and in transifex.
 
-**[Improve invitation experience](items/invitation.md)** - Do some tracking and UX improvement on users inviting others. How do we get people to invite more? And to accept invitations? Look in to personalized messages, etc.
-
-
 
 ### Medium term (3 - 9 months)
+
+**[Improve invitation experience](items/invitation.md)** - Do some tracking and UX improvement on users inviting others. How do we get people to invite more? And to accept invitations? Look in to personalized messages, etc.
+
 
 **[Interoperable Transports](items/transports.md)** - Tor has a pluggable transports API, but the core transports can work just as well with Lantern. We need to incorporate more and build a joint community around transports.
 
