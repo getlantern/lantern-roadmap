@@ -74,9 +74,6 @@ source contribution.
 
 **Use map visualization as screen saver** - could be cool.
 
-**Switch to Gradle Build System** - Maven to be annoying and unintuitive.  [Gradle](http://www.gradle.org/)
-is much nicer to use.
-
 ### Deferred
 
 (None currently)
