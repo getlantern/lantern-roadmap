@@ -8,30 +8,23 @@ on how to use and update it.
 **[Standalone WebRTC for NAT Traversal](items/webrtc.md)** - Use WebRTC's advanced NAT traversal, factored out to its 
 own library. ([@atavism](https://github.com/atavism))
 
-**[Gui for Admin Stats](items/admin-gui.md)** - Extend the prototype of a stats GUI to a dashboard view to get a real time
-and cumulative view of Lantern network growth.
+**[Gui for Admin Stats](items/admin-gui.md)** - Extend the prototype of a stats GUI to a dashboard view to get a real time and cumulative view of Lantern network growth.
 
 **[Improve signin process](items/signin.md)** - There are a number of workflow improvements we could make to ease 
 setting up Lantern, for both give and get mode users.
 
 **[Enable user set up of Fallbacks](items/user-fallbacks.md)** - Many users have access to machines that can be on
-24/7 and serve as fallbacks. But we need to make it easier for them to set up and have a fallback that is not controlled
-by Brave New Software.
+24/7 and serve as fallbacks. But we need to make it easier for them to set up and have a fallback that is not controlled by Brave New Software.
 
-**[Improve whitelist experience](items/whitelist.md)** - There are a few low hanging whitelist improvements we could make,
-like easing the process of adding to the whitelist (example browser plugin?) and including whitelist info in our s3 config.
+**[Improve whitelist experience](items/whitelist.md)** - There are a few low hanging whitelist improvements we could make, like easing the process of adding to the whitelist (example browser plugin?) and including whitelist info in our s3 config.
 
-**[Auto-update](items/autoupdate.md)** - Right now we make users download new versions of Lantern. We should follow the
-lead of chrome and firefox and just automatically update for our users when possible.
+**[Auto-update](items/autoupdate.md)** - Right now we make users download new versions of Lantern. We should follow the lead of chrome and firefox and just automatically update for our users when possible.
 
-**[Interoperable Transports](items/transports.md)** - Tor has a pluggable transports API, but the core transports can
-work just as well with Lantern. We need to incorporate more and build a joint community around transports.
+**[Interoperable Transports](items/transports.md)** - Tor has a pluggable transports API, but the core transports can work just as well with Lantern. We need to incorporate more and build a joint community around transports.
 
-**[Better documentation infrastructure](items/documentation.md)** - We are mostly done with migrating documentation to 
-Sphinx. Need to finish it so it's in master, live on the website and in transifex.
+**[Better documentation infrastructure](items/documentation.md)** - We are mostly done with migrating documentation to Sphinx. Need to finish it so it's in master, live on the website and in transifex.
 
-**[Improve invitation experience](items/invitation.md)** - Do some tracking and UX improvement on users inviting others. How 
-do we get people to invite more? And to accept invitations? Look in to personalized messages, etc.
+**[Improve invitation experience](items/invitation.md)** - Do some tracking and UX improvement on users inviting others. How do we get people to invite more? And to accept invitations? Look in to personalized messages, etc.
 
 **[Next-generation signaling](https://github.com/getlantern/lantern-roadmap/blob/master/lep/DRAFT/003_Simple_Signaling.md)** - XMPP has scaling issues, doesn't work with flashlight, and Google is phasing it out anyway. Still in draft, but [anonymizing users' addresses](items/xmpp.md) for peers that aren't direct friends would fall out of this.
 
