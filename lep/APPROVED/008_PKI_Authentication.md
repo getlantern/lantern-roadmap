@@ -62,20 +62,14 @@ Lantern client then submits this CSR to janus.
 When janus receives a CSR, it verifies that the CSR contains an email address
 SAN, does not contain a [Subject] and does not contain any other SANs.  If the
 certificate meets these criteria, janus issues a certificate and sends an email
-to the email address indicated in the SAN.  That email includes:
+to the email address indicated in the SAN.  That email includes a link to the
+local Lantern client that encodes the certificate as a URL
+(e.g. `http://localhost:15342/AddCert/<PEM Encoded CERT>`). Clicking the link
+will automatically import the certificate and display the Lantern UI, at which
+point the sign-in process is complete.
 
-1. A link to the local Lantern client that encodes the certificate as a URL
-   (e.g. `http://localhost:15342/AddCert/<PEM Encoded CERT>`)
-
-2. The certificate as an attachment
-
-3. Instructions to click the link or save the attachment and import it into
-   Lantern
-
-If Lantern is running, clicking the link will automatically import the
-certificate, at which point the sign-in process is complete.  As part of the
-sign in screens, the Lantern client will also provide an option to upload a
-certificate from disk.
+In practice, we'll want a lightweight watchdog process that is always running 
+(even when Lantern is "off") which can be the one that handles this link.
 
 Now, when the Lantern client communicates with Lantern cloud services like
 kscope using TLS, it identifies itself by supplying its certificate as a client
@@ -93,3 +87,51 @@ SAN, Lantern cloud services know whose behalf the client is working on.
 [Subject Alternative Name]: http://tools.ietf.org/html/rfc2459#section-4.2.1.7
 
 [Subject]: http://tools.ietf.org/html/rfc2459#section-4.1.2.6
+
+## Usability Benefits
+
+1. The user doesn't have to create a password, which eliminates a step from the
+   sign-in flow.
+
+2. The user doesn't have to remember a password
+
+## Engineering Benefits
+
+1. The PKI approach is significantly simpler to implement than password because
+   it's completely stateless.  The CA simply maintains its own private key,
+   public key and signing certificate.  Literally all it does is accept
+   certificate signing requests (CSRs), issue certificates with an email address
+   SAN and send those certificates to the corresponding email address.  Contrast
+   this with a password-based system that would have to maintain a database of
+   users and passwords, still need to send emails to confirm people's email
+   address and would also need to provide some sort of password reset facility
+   (perhaps using challenge questions, which is more state that needs to be
+   stored and UI that needs to be maintained).
+
+2. The PKI approach makes single sign on (SSO) a breeze.  After getting a
+   certificate, the client can authenticate with any Lantern cloud service that
+   accepts our CA's signing certificate as valid, meaning that kaleidoscope,
+   signaling and so on could all authenticate clients without having to maintain
+   any state information about users and without having to communicate with some
+   sort of sign-on server.  This keeps things very loosely coupled and resilient
+   to service interruptions.
+
+3. The PKI approach actually provides a basis for adding additional identity
+   providers and, if there's a good reason for it, also giving people the option
+   of setting up an account with a password.  In particular, a password or login
+   with another identity provider would simply become something that allows your
+   Lantern to exchange a CSR for a certificate without having to have it sent to
+   you via email.  The really cool thing about this is that the nice SSO
+   properties of PKI remain even as we add these other authentication 
+   mechanisms.
+
+4. The work that we have to do to support opening urls from emails in Lantern
+   has value outside of authentication.  We've talked about sending people
+   monthly emails with stats about Lantern and links into the Lantern UI. That
+   would benefit from this custom protocol handling capability too.
+
+## Future Enhancements
+
+At some point, we'll need the ability to deactivate/blacklist certain accounts.
+This might require introducing some state to janus that allows trusted Lantern
+cloud services to check the blacklist.
