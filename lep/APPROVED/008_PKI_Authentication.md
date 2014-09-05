@@ -133,5 +133,15 @@ SAN, Lantern cloud services know whose behalf the client is working on.
 ## Future Enhancements
 
 At some point, we'll need the ability to deactivate/blacklist certain accounts.
-This might require introducing some state to janus that allows trusted Lantern
-cloud services to check the blacklist.
+There are a couple of ways to do this.
+
+1. Introduce some state to janus that allows trusted Lantern cloud services
+   to check the blacklist.
+
+2. Issue time-limited certificates.  Clients can always redeem these from
+   janus for newer certificates unless the user account has been
+   deactivated.
+
+#2 has the benefit of being stateless and not requiring any cooperation between
+janus and other cloud servers.  The main downside is that accounts cannot be
+immediately deactivated.
