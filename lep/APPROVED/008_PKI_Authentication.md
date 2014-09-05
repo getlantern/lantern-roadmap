@@ -142,6 +142,6 @@ There are a couple of ways to do this.
    janus for newer certificates unless the user account has been
    deactivated.
 
-#2 has the benefit of being stateless and not requiring any cooperation between
+Option 2 has the benefit of being stateless and not requiring any cooperation between
 janus and other cloud servers.  The main downside is that accounts cannot be
 immediately deactivated.
