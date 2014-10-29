@@ -25,7 +25,7 @@ An `IP` field is added to the Masquerade struct in
 
 The Python scripts in cert/ are updated to feed the IPs to these files.
 
-The configured IPs are sourced by doing DNS queries from the location where our flashlight servers currently run (currently Singapore).
+The configured IPs are sourced by doing DNS queries from the location where our flashlight servers run (currently Singapore).
 
 The flashlight client dials directly to the IP, doing the verification of the
 cert as a separate step. [1]
@@ -45,6 +45,7 @@ No backwards compatibility issues are expected.  Go's YAML unpacking will
 silently ignore any fields that it can't unmarshal to a Go structure, so old clients should just ignore the `ip` field in masquerade entries and keep on using DNS to obtain that as before.
 
 
+---
 [1] Proof-of-concept implementation of this dialing-verification scheme:
 
 ```go
