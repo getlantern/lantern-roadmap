@@ -12,7 +12,7 @@ Send server-side events to Google Analytics. This will make it easier to track u
 
 ## Description
 
-Google Analytics is a web analytics service that records website traffic. It's a convenient, well-known system for tracking information about visitors. The Lantern front-end already makes extensive use of it to analyze traffic and user activity. Currently, the type of user information we collect includes browser, operating system, language, service provider, session duration, page views, number of new vs. returning users, etc.
+Google Analytics is a web analytics service that records website traffic. It's a convenient, well-known system for tracking information about visitors. The Lantern front-end already makes extensive use of it to analyze usage statistics and user activity. Currently, the type of user information we collect includes browser, operating system, language, service provider, session duration, page views, number of new vs. returning users, etc.
 
 There are numerous backend events it would be useful to track in addition to front-end user activity and installs. Combining these events with existing user data, and being able to inspect it from the GA dashboard, would give us deeper insight into general Lantern usage. For instance, we may want to track certain events such as geolookups, circumvention techniques (domain-fronting, direct proxies, local DNS resolution, etc), config updates, etc.
 
