@@ -8,7 +8,7 @@ Author: atavism
 
 ## Proposal
 
-Send server-side events to Google Analytics. This will enable us to track user activity and general Lantern usage on the backend prior to forwarding requests to GA.
+Send server-side events to Google Analytics. This will make it easier to track user activity and general Lantern usage on the backend prior to forwarding requests to GA.
 
 ## Description
 
