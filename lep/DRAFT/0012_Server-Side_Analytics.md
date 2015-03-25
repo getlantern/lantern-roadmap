@@ -16,6 +16,8 @@ Google Analytics is a web analytics service that records website traffic. It's a
 
 There are numerous backend events it would be useful to track in addition to front-end user activity and installs. Combining these events with existing user data, and being able to inspect it from the GA dashboard, would give us deeper insight into general Lantern usage. For instance, we may want to track certain events such as geolookups, circumvention techniques (domain-fronting, direct proxies, local DNS resolution, etc), config updates, etc.
 
+A GA request is generated when the backend starts. This represents a new user session. If the UI is enabled, we wait to receive additional information from the front-end, specifically the GA cookie, which includes information about the browser.
+
 If a user disables anonymous-usage reporting, we don't track anything about their activity.
 
 ## Parameters
@@ -44,4 +46,3 @@ Zoom                 | Map zoom-level interaction
 Adds site            | New proxied sites entry
 Removes site         | Proxied sites entry deleted
 Access proxied sites | Proxied sites list accessed
-Error                | System error encountered
