@@ -37,9 +37,9 @@ The fact to measure is data flow. For example, we can query:
 * Day of year/month/week
 
 ###Metrics
-* Time required to establish connection (gauge)
-* Time elapsed between first write and the first byte received (gauge)
-* Throughput (counter)
+* Time required to establish connection (gauge, measured at both ingress and egress)
+* Time elapsed between first write and the first byte received (gauge, measured at both ingress and egress)
+* Request/Response throughput (counter)
 * Errors encountered (counter)
 * Connections made (counter)
 * Parallel connections (gauge)
@@ -50,29 +50,29 @@ The fact to measure is data flow. For example, we can query:
 * total bytes sent per connection
 * total bytes received per connection
 * remote host
-* remote addr
-* local addr
+* remote address
+* local address
 * Duration of the connection
 * Error encountered or not
 
-All data will be timestamped and submited at the end of connection.
+All data will be timestamped and submitted at the very end of connection.
 
-###Local calculation (per 5 min)
+###Local calculation and submitting (per 5 min)
 
-* accumulate sent/received bps
+* mask the last octet of local/remote address
 
-* min/max/avg time for dial time and RTT
+* accumulate counters in the period
 
-* mask the last octet of addresses
+* min/max/avg for all gauges
 
 
-###Calculation at server side
+###Calculation at statshub
 
 * Keep all raw data
 
-* Add an layer to aggregate network and half-hour grain
+* Add an layer to aggregate across dimensions, in half-hour grain
 
-* Add customized stream layer to realtime monitor
+* Add customized stream layer for realtime monitor
 
 ###Other considerations
 
@@ -81,5 +81,5 @@ All data will be timestamped and submited at the end of connection.
 	* Need another key to get data
 
 *  Extensibility
-   
+
    Should be easy to add more dimensions / metrics without modify existing logic.
