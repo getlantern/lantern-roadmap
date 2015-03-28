@@ -11,6 +11,8 @@ Lantern Enhancement Proposals (LEP's) are the technical complement to the roadma
 depth engineering approach and implications. They are found in the [lep/](lep/) folder, as well as linked
 to from roadmap items.
 
+**All LEPs should include a section on security considerations.**
+
 ### Adding to the roadmap
 
 To create a new roadmap item add an entry to `roadmap.md` following the same structure as the 
