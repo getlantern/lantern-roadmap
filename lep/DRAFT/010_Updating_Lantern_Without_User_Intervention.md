@@ -66,3 +66,38 @@ message meaning that a new version is available, the client will download the
 binary patch, apply it to a temporary file and check the signature, if the
 signature is what the client expects, the original executable will be replaced
 with the patched one.
+
+## Security considerations
+
+The whole auto-update model is based on the possibility of overwriting the
+Lantern binary. On certain systems (Linux, OSX and recent versions of Windows)
+this can only be done if the owner of the Lantern process matches or exceeds
+the privileges of the owner of the Lantern binary.
+
+Lantern does not run in root/Administrator mode so, the only way to overwrite
+the binary is by running as the owner of the Lantern binary.
+
+On Linux, a copy of the system's Lantern binary is placed in `$HOME/.lantern`
+under the ownership of the current user, the Lantern process is spawned from
+this binary with the current user's privileges and this is the one that can be
+auto-updated.
+
+On OSX and Windows Lantern is installed as user application and therefore it's
+writable by the current user too.
+
+This fact may represent a security risk: as the Lantern process can overwrite
+it's own binary, every process that runs as the current user is able to
+overwrite it too, on Linux and Windows XP there would be no difference as
+Lantern binaries are not signed or the system lacks the capability for checking
+whether it's signed or not. OSX and recent versions of Windows do have the
+tools to check if a new binary that replaces the Lantern binary has the same
+code signature of the original binary, but this does seem to depend on the
+current user's security settings.
+
+What would be the motivation for other processes to overwrite the Lantern
+binary?
+
+* Surveillance.
+* The ability to pass through the Windows Firewall.
+
+As of today, this problem remains open.
