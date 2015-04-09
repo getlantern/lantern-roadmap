@@ -26,21 +26,26 @@ Each server would act as a direct proxy if that technique is available; a server
 
 Nginx would be configured to use a GeoIP module, which uses the MaxMind GeoIP database that contains a list of IP address to location mappings. This table contains a list of approximate locations. We might improve the accuracy of this table by combining data from different geolocation service providers.
 
-Every server contains a virtual host directive that specifies a list of location-based subdomains (that we could do DNS load balancing over). When a client first asks a server to proxy traffic, a conditional checkes whether or not the client should be redirected to another, closer server. The client is repeatedly redirected until it eventually ends up in an ideal server pool.
+Every server contains a virtual host directive that specifies a list of location-based subdomains (that we could do DNS load balancing over). When a client first asks a server to proxy traffic, a check is conducted whether or not the client should be redirected to another, closer server. The client is repeatedly redirected until it eventually winds up in an ideal server pool. 
 
 ## nginx virtual host configuration
 ```
 map $geoip_city_continent_code $closest_server {
-  default www.example.com;
-  EU      eu.example.com;
-  AS      as.example.com;
+  default www.getlantern.org;
+  EU      eu.getlantern.org;
+  AS      as.getlantern.org;
+  CN      cn.getlantern.org;
+  ... 
+  etc
 }
 
 server {
-  server_name example.com
-              www.example.com
-              eu.example.com
-              as.example.com;
+  server_name getlantern.org
+              www.getlantern.org
+              eu.getlantern.org
+              us.getlantern.org
+              ir.getlantern.org
+              cn.getlantern.org;
 
   if ($closest_server != $host) {
     rewrite ^ $scheme://$closest_server$request_uri break;
@@ -51,13 +56,13 @@ server {
 ```
 [1]
 
-Every nginx instance would effectively be its own geoserver that maintains a GeoIP database. As the MaxMind database changes on a weekly basis, we'd have to periodically synchronize updates. An update server could be used to check for diffs by downloading the latest binary from MaxMind. Any time a diff is detected, those changes are propagated to every flashlight server.
+Every nginx instance would effectively function as its own geoserver with a copy of a common GeoIP database. As the MaxMind database changes frequently, on a weekly basis, we'd need to periodically synchronize updates. An update server could be used to check for diffs by downloading the latest binary from MaxMind. Any time a diff is detected, those changes are propagated to every flashlight server.
 
-For Iran, where a lot of IP address blocks are absent from the MaxMind database in particular, a fallback mechansim we employ checks whether a given client IP address is contained in the IP to ISP table provided by Project Anita. By knowing an IP is associated with a particular ISP, we would still be able to estimate an optimal lat/lon candidate. 
+For Iran, where a lot of IP address blocks are absent from the MaxMind database in particular, a fallback mechansim we employ checks whether a given client IP address is contained in the IP -> ISP table provided by Project Anita. By knowing an IP is associated with a particular ISP, we can easily estimate an optimal lat/lon. 
 
 Nginx mitigates the problem of TLS handshake and HTTP response fingerprintability due to its privacy enhancing nature. Lantern network activity would be less detectable using standard responses that resemble typical, ordinary traffic.
 
-Using nginx for direct proxies brings additional security and performance improvements. A configuration file [2] with these options is presented below:
+Using nginx for direct proxies, keeping in mind its upcoming HTTP/2 support, brings additional security and performance possibilities. A configuration file [2] with a sampling of options (not everyone is releevant) is presented below:
 
 ```
 # don't send the nginx version number in error pages and Server header
