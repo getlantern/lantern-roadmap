@@ -141,4 +141,6 @@ server {
 
 ## References
 [1] https://www.digitalocean.com/community/tutorials/how-to-use-nginx-as-a-global-traffic-director-on-debian-or-ubuntu
-[2] https://gist.github.com/plentz/6737338 and http://tautt.com/best-nginx-configuration-for-security/
+
+[2] https://gist.github.com/plentz/6737338 and 
+http://tautt.com/best-nginx-configuration-for-security/
