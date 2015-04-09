@@ -8,11 +8,11 @@ Author: atavism
 
 ## Abstract
 
-A primary consideration for selecting servers to proxy traffic through is accessibility: only candidates with unblocked techniques should be chosen. Beyond this assessment though, another crucial factor that emerges is real-world proximity: peers should be choosen according to how close they are to a given client. Any reduction in latency is going to result in shorter delays servicing requests. Since flashlight clients are able to geolocate themselves, this LEP proposes a solution for dynamically selecting servers to handle requests according to accessibility and distance.
+A primary consideration for selecting servers to proxy traffic through is accessibility: only unblocked candidates should be chosen. Beyond this requirement though, another crucial factor that emerges is real-world proximity: peers should be choosen according to how close they are to a given client. Any reduction in latency is going to result in shorter delays servicing requests. Since flashlight clients are able to geolocate themselves, this LEP proposes a solution for dynamically selecting servers to handle requests according to accessibility and distance.
 
 ## Proposal
 
-Every flashlight server would run Nginx that would act as a location-based front-end proxy service with a GeoIP module. The proposed sequence:
+Every flashlight server runs alongside an Nginx instance that functions as a location-based traffic coordinator and front-end proxy service. The proposed sequence:
 
 1. A request arrives for a specified resource
 2. Nginx checks whether or not the client should be redirected to a closer flashlight server; if so, 
@@ -20,13 +20,13 @@ Every flashlight server would run Nginx that would act as a location-based front
 3. Otherwise, forward the request to the specified server and await a response
 4. Returns the response to the original requester
 
-Clients would still use balancer to take servers out of rotation if they're blocked. We'd use a priority queue implementation to rank servers by accessibility and distance.
+Clients would still rely on balancer to take server candidates out of rotation if they're blocked. We'd use a priority queue to rank servers by accessibility and distance.
 
 Each server would act as a direct proxy if that technique is available; a server defers to an alternative list of techniques if the preferred method is unavailable. 
 
-Nginx would be configured to use the GeoIP module, which uses the MaxMind GeoIP database that contains a list of IP address to location mappings. This table contains a list of approximate locations. We might improve the accuracy of this table by combining data from different geolocation service providers.
+Nginx would be configured to use a GeoIP module, which uses the MaxMind GeoIP database that contains a list of IP address to location mappings. This table contains a list of approximate locations. We might improve the accuracy of this table by combining data from different geolocation service providers.
 
-Every server contains a virtual host directive that specifies a list of location-based subdomains. When a client first asks a server to proxy traffic, a conditional checkes whether or not the client should be redirected to another, closer server. The client is repeatedly redirected until it eventually ends up in an ideal server pool.
+Every server contains a virtual host directive that specifies a list of location-based subdomains (that we could do DNS load balancing over). When a client first asks a server to proxy traffic, a conditional checkes whether or not the client should be redirected to another, closer server. The client is repeatedly redirected until it eventually ends up in an ideal server pool.
 
 ## nginx virtual host configuration
 ```
