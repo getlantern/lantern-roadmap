@@ -8,11 +8,11 @@ Author: atavism
 
 ## Abstract
 
-A primary consideration for selecting servers to proxy traffic through is accessibility: only candidate nodes with optimal, unblocked techniques should be chosen. Beyond this assessment though, another crucial factor that emerges is real-world proximity: peers should be choosen according to how close they are to a given client. Any reduction in latency is going to result in shorter delays servicing requests. Since flashlight clients are able to geolocate themselves, this LEP proposes a solution for dynamically servicing requests by accessibility and distance.
+A primary consideration for selecting servers to proxy traffic through is accessibility: only candidates with unblocked techniques should be chosen. Beyond this assessment though, another crucial factor that emerges is real-world proximity: peers should be choosen according to how close they are to a given client. Any reduction in latency is going to result in shorter delays servicing requests. Since flashlight clients are able to geolocate themselves, this LEP proposes a solution for dynamically selecting servers to handle requests according to accessibility and distance.
 
 ## Proposal
 
-Nginx would act as a location-based front-end proxy service. Nginx is configured with the GeoIP module. 
+Every flashlight server would run Nginx that would act as a location-based front-end proxy service with a GeoIP module. The proposed sequence:
 
 1. A request arrives for a specified resource
 2. Nginx checks whether or not the client should be redirected to a closer flashlight server; if so, 
@@ -20,7 +20,11 @@ Nginx would act as a location-based front-end proxy service. Nginx is configured
 3. Otherwise, forward the request to the specified server and await a response
 4. Returns the response to the original requester
 
-Each flashlight server would only act as a direct proxy if that optimal technique is available. Nginx is configured to use the GeoIP module, which uses the MaxMind GeoIP database that contains a list of IP address to location mappings. This table contains a list of approximate locations. We might improve the accuracy of this table by combining data from different geolocation service providers.
+Clients would still use balancer to take servers out of rotation if they're blocked. We'd use a priority queue implementation to rank servers by accessibility and distance.
+
+Each server would act as a direct proxy if that technique is available; a server defers to an alternative list of techniques if the preferred method is unavailable. 
+
+Nginx would be configured to use the GeoIP module, which uses the MaxMind GeoIP database that contains a list of IP address to location mappings. This table contains a list of approximate locations. We might improve the accuracy of this table by combining data from different geolocation service providers.
 
 Every server contains a virtual host directive that specifies a list of location-based subdomains. When a client first asks a server to proxy traffic, a conditional checkes whether or not the client should be redirected to another, closer server. The client is repeatedly redirected until it eventually ends up in an ideal server pool.
 
@@ -43,14 +47,15 @@ server {
   }
 
   ...
-} [1]
+}
 ```
+[1]
 
-Every nginx instance would effectively be its own geoserver that maintains a GeoIP database. As the MaxMind database changes on a weekly basis, we have to periodically synchronize updates. An update server could be used to check for diffs by downloading the latest binary from MaxMind. Any time a diff is detected, those changes are propagated to every flashlight server.
+Every nginx instance would effectively be its own geoserver that maintains a GeoIP database. As the MaxMind database changes on a weekly basis, we'd have to periodically synchronize updates. An update server could be used to check for diffs by downloading the latest binary from MaxMind. Any time a diff is detected, those changes are propagated to every flashlight server.
 
-For Iran, where a lot of IP address ranges are missing from the MaxMind database in particular, a fallback mechansim we employ checks whether a given client IP address is contained in an ISP block in the Project Anita database. 
+For Iran, where a lot of IP address blocks are absent from the MaxMind database in particular, a fallback mechansim we employ checks whether a given client IP address is contained in the IP to ISP table provided by Project Anita. By knowing an IP is associated with a particular ISP, we would still be able to estimate an optimal lat/lon candidate. 
 
-Nginx mitigates the problem of TLS handshake and HTTP response fingerprintability due to its privacy enhancing nature. Lantern network activity would subsequently camouflage better with standard responses that look like typical, ordinary traffic.
+Nginx mitigates the problem of TLS handshake and HTTP response fingerprintability due to its privacy enhancing nature. Lantern network activity would be less detectable using standard responses that resemble typical, ordinary traffic.
 
 Using nginx for direct proxies brings additional security and performance improvements. A configuration file [2] with these options is presented below:
 
