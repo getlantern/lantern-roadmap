@@ -8,17 +8,17 @@ Author: atavism
 
 ## Abstract
 
-A primary consideration for selecting servers to proxy traffic through is accessibility: only unblocked candidates should be chosen. Beyond this requirement though, another crucial factor that emerges is real-world proximity: peers should be choosen according to how close they are to a given client. Any reduction in latency is going to result in shorter delays servicing requests. Since flashlight clients are able to geolocate themselves, this LEP proposes a solution for dynamically selecting servers to handle requests according to accessibility and distance.
+A primary consideration for selecting servers to proxy traffic through is accessibility: only unblocked candidates should be chosen. Beyond this requirement though, another crucial factor that emerges is real-world proximity: peers should be chosen according to how close they are to a given client. Any reduction in latency is going to result in shorter delays servicing requests. Since flashlight clients are able to geolocate themselves, this LEP proposes a solution for dynamically selecting servers to handle requests according to accessibility and distance.
 
 ## Proposal
 
 Every flashlight server runs alongside an Nginx instance that functions as a location-based traffic coordinator and front-end proxy service. The proposed sequence:
 
 1. A request arrives for a specified resource
-2. Nginx checks whether or not the client should be redirected to a closer flashlight server; if so, 
+1. Nginx checks whether or not the client should be redirected to a closer flashlight server; if so, 
    it rewrites the request to the alternative flashlight server pool
-3. Otherwise, forward the request to the specified server and await a response
-4. Returns the response to the original requester
+1. Otherwise, forward the request to the specified server and await a response
+1. Returns the response to the original requester
 
 Clients would still rely on balancer to take server candidates out of rotation if they're blocked. We'd use a priority queue to rank servers by accessibility and distance.
 
@@ -62,7 +62,7 @@ For Iran, where a lot of IP address blocks are absent from the MaxMind database 
 
 Nginx mitigates the problem of TLS handshake and HTTP response fingerprintability due to its privacy enhancing nature. Lantern network activity would be less detectable using standard responses that resemble typical, ordinary traffic.
 
-Using nginx for direct proxies, keeping in mind its upcoming HTTP/2 support, brings additional security and performance possibilities. A configuration file [2] with a sampling of options (not everyone is releevant) is presented below:
+Using nginx for direct proxies, keeping in mind its upcoming HTTP/2 support, brings additional security and performance possibilities. A configuration file [2] with a sampling of options (not everyone is relevant) is presented below:
 
 ```
 # don't send the nginx version number in error pages and Server header
