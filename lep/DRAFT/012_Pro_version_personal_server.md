@@ -22,13 +22,13 @@ This LEP stems from the need to accomodate more users within reasonable costs, f
 The process of requesting a personal server should be initiated from the Lantern UI.  This sketch proposes a simple way of including it in current Lantern interface.  This can be revisited from the UX/UI perspective, but it serves as a solid starting point.
 
 <p align="center">
-![UI Proposal](images/lep-012-01.png)
+<img src="images/lep-012-01.png" alt="UI Proposal"/>
 </p>
 
 Since June 2014, Stripe can accept Alipay payments, which opens the door to offering this service in China.  Using Alipay with Stripe is straightforward, and just requires an option in the HTML5 data fields.  The default UI is as follows:
 
 <p align="center">
-![Stripe/Alipay](images/lep-012-stripe-alipay.png)
+<img src="images/lep-012-stripe-alipay.png" alt="Stripe/Alipay"/>
 </p>
 
 The simplest UI seems to be most effective, reducing complexities and legal issues related to saving the user data and payment information.  Stripe handles that and takes care of PCI compliance and security, as it keeps everything off Lantern's servers.  Most importantly, Stripe has done a great job at UX/UI and optimizing conversion rates with their UI widget.
@@ -55,7 +55,7 @@ This UI widget will be responsible of sending a request to Stripe/Alipay.  This 
 The payment process involves the Lanter Client, the Stripe Servers and the Lantern Server.  The proposed workflow is summarized in the following picture:
 
 <p align="center">
-![Payment Processing](images/lep-012-payment.png)
+<img src="images/lep-012-payment.png" alt="Payment Processing"/>
 </p>
 
 The example code shown in the previous section will not execute the charge from the Lantern client UI, but rather send a request to validate the data in Stripe **(step 1)**.  Stripe's JavaScript plugin (called *Checkout*) hijacks the form in order to do this before contacting any of our servers.  Stripe will reply to the AJAX request with a one-time token, which will be inserted into the form **(step 2)**.  Finally, the form is sent by the Lantern UI in a POST request (done via an async callback triggered by the successful AJAX reply from Stripe) to a web service in the Lantern cloud (*the Payments server*), along the token and the validated data **(step 3)**.
@@ -124,7 +124,7 @@ These are some less critical but relevant options suggested for *Lantern Pro*:
 The following is a crude approximation of how the UI could look like is:
 
 <p align="center">
-![Options](images/lep-012-options.png)
+<img src="images/lep-012-options.png" alt="Options"/>
 </p>
 
 If the alternate path for config distribution to clients is chosen, the *share token* option becomes irrelevant.
