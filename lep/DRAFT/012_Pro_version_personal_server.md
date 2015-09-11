@@ -25,6 +25,8 @@ The process of requesting a personal server should be initiated from the Lantern
 <img src="images/lep-012-01.png" alt="UI Proposal"/>
 </p>
 
+The *Get Pro* button would open a menu with playment solutions and plans.  If the option explained below of using configuration files distributed via email to the users who purchase Pro is chosen, this would be a good place for the file selector.
+
 Since June 2014, Stripe can accept Alipay payments, which opens the door to offering this service in China.  Using Alipay with Stripe is straightforward, and just requires an option in the HTML5 data fields.  The default UI is as follows:
 
 <p align="center">
@@ -110,7 +112,9 @@ There are two disadvantages to the proposed method:
 
 * It doesn't take into account the time taken to spawn a new server until it becomes functional.  If it's too long, a notification system should be put in place, instead of a simple push/long-poll that seems to assume that the user will be in front of the UI waiting for the setup to be finished.  A proper waiting UI could be a solution for this, though.
 
-An email-based Pro Server config file is proposed for this.  The file can be directly shared to other Lantern instances or users and the sharing problem would be solved.  The cost of this solution is obvious: it introduces a more manual setup.  It is suggested however that the advantages outweight the disadvantages. 
+An email-based Pro Server config file is proposed for this.  The file can be directly shared to other Lantern instances or users and the sharing problem would be solved.  The cost of this solution is obvious: it introduces a more manual setup.  It is suggested however that the advantages outweight the disadvantages.
+
+The UI for this would be a file selector in the *Get Pro* menu, that the user can employ to open the file sent by Lantern.
 
 
 ## Sharing across devices and users
