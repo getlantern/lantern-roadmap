@@ -19,15 +19,33 @@ This LEP stems from the need to accomodate more users within reasonable costs, f
 
 ### 1. Payment UI
 
-The process of requesting a personal server should be initiated from the Lantern UI.  This sketch proposes a simple way of including it in current Lantern interface.  This can be revisited from the UX/UI perspective, but it serves as a solid starting point.
+#### 1.1 The process of requesting a personal server should be initiated from the Lantern UI.
+
+This sketch proposes a simple way of including it in current Lantern interface.  This can be revisited from the UX/UI perspective, but it serves as a solid starting point.
 
 <p align="center">
 <img src="images/lep-012-01.png" alt="UI Proposal"/>
 </p>
 
-The *Get Pro* button would open a menu with playment solutions and plans.  If the option explained below of using configuration files distributed via email to the users who purchase Pro is chosen, this would be a good place for the file selector.
+#### 1.2 The *Get Pro* button would open a menu with playment solutions and plans.
 
-Since June 2014, Stripe can accept Alipay payments, which opens the door to offering this service in China.  Using Alipay with Stripe is straightforward, and just requires an option in the HTML5 data fields.  The default UI is as follows:
+At this screen, we should offer also the possibility to the user to recover a Pro configuration, since he/she can be setting up Lantern in a different device or just reinstalling the program.
+
+<p align="center">
+<img src="images/lep-012-02.png" alt="UI Proposal"/>
+</p>
+
+#### 1.3 The user clicks "Already Pro User"
+
+This screen should be the same one the **Lantern Pro notification email** points to (see below).  It allows the user to open the file that has his/her custom Pro server config.
+
+<p align="center">
+<img src="images/lep-012-03.png" alt="UI Proposal"/>
+</p>
+
+#### 1.4 The user clicks a Payment plan
+
+When a user clicks a plan, the payment gateway pops up.  This process needs to be integrated and seamless.  Among the different options Stripe stands out for its integration, UI/UX and access in relevant countries.  Since June 2014, Stripe can accept Alipay payments, which opens the door to offering this service in China.  Using Alipay with Stripe is straightforward, and just requires an option in the HTML5 data fields.  The default UI is as follows:
 
 <p align="center">
 <img src="images/lep-012-stripe-alipay.png" alt="Stripe/Alipay"/>
@@ -73,7 +91,7 @@ Once all validation has be done at Stripe's side, the UI Javascript side will re
 
 At this point, the charge has been done and we can proceed with launching a server.  Stripe's charging API is *synchronous*, so if it succeeds we can act immediately, whithout requiring any callback to check status. As soon as the `charge` call returns, we are good to go **(step 4)**.  This will be done by appending a new Lantern Pro Server request in Redis DB.
 
-**Notes on optional features**
+**A note on information storage**
 
 Should card details be saved? We don't have users at the moment, and since we are working with tokens, it is probably best to keep it simple without users.  Additionally, it seems that Alipay users are more confortable with one-time payments than subscriptions, even if for larger periods.  Although they are separate things, the fact that users don't like subscriptions suggests that is better to just provide a very simple UI and no information saving or accounts.
 
