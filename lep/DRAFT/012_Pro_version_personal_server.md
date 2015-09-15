@@ -8,7 +8,7 @@ Author: uaalto
 
 ## Abstract
 
-A proposal for a Lantern Pro version consisting of a premium personal server, automatically launched after payment has been processed.  The launched server and the requesting client are automatically configured.  Eventually, these personal servers should be shareable at will by the user to other Lantern instances or users.
+A proposal for a Lantern Pro version consisting of a premium personal server, automatically launched after payment has been processed.  The launched server and the requesting client are automatically configured.  Additionally, these personal servers should be shareable at will by the user to other Lantern instances or users.
 
 ## Rationale
 
@@ -21,7 +21,7 @@ This LEP stems from the need to accomodate more users within reasonable costs, f
 
 #### 1.1 The process of requesting a personal server should be initiated from the Lantern UI.
 
-This sketch proposes a simple way of including it in current Lantern interface.  This can be revisited from the UX/UI perspective, but it serves as a solid starting point.
+This sketch proposes a simple way of including it in current Lantern interface.  This can be revisited from the UX/UI perspective, but it serves as a starting point.
 
 <p align="center">
 <img src="images/lep-012-01.png" alt="UI Proposal"/>
@@ -29,7 +29,7 @@ This sketch proposes a simple way of including it in current Lantern interface. 
 
 #### 1.2 The *Get Pro* button would open a menu with playment solutions and plans.
 
-At this screen, we should offer also the possibility to the user to recover a Pro configuration, since he/she can be setting up Lantern in a different device or just reinstalling the program.
+In this screen, we should offer also the possibility to the user to recover a Pro configuration, since he/she can be setting up Lantern in a different device or just reinstalling the program.
 
 <p align="center">
 <img src="images/lep-012-02.png" alt="UI Proposal"/>
@@ -45,7 +45,13 @@ This screen should be the same one the **Lantern Pro notification email** points
 
 #### 1.4 The user clicks a Payment plan
 
-When a user clicks a plan, the payment gateway pops up.  This process needs to be integrated and seamless.  Among the different options Stripe stands out for its integration, UI/UX and access in relevant countries.  Since June 2014, Stripe can accept Alipay payments, which opens the door to offering this service in China.  Using Alipay with Stripe is straightforward, and just requires an option in the HTML5 data fields.  The default UI is as follows:
+When a user clicks a plan, the payment gateway pops up.  This process needs to be integrated and seamless.  Among the different options Stripe stands out for its integration, UI/UX and access in relevant countries.
+
+<p align="center">
+<img src="images/lep-012-04.png" alt="UI Proposal"/>
+</p>
+
+Since June 2014, Stripe can accept Alipay payments, which opens the door to offering this service in China.  Using Alipay with Stripe is straightforward, and just requires an option in the HTML5 data fields.  The default UI is as follows:
 
 <p align="center">
 <img src="images/lep-012-stripe-alipay.png" alt="Stripe/Alipay"/>
