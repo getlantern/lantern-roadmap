@@ -14,8 +14,8 @@
    id="svg2"
    version="1.1"
    inkscape:version="0.48.5 r10040"
-   sodipodi:docname="lep-012-payment.svg"
-   inkscape:export-filename="/Users/Alvaro/lantern/lantern-roadmap/lep/DRAFT/images/lep-012-payment.png"
+   sodipodi:docname="lep-012-cloud.svg"
+   inkscape:export-filename="/Users/Alvaro/lantern/lantern-roadmap/lep/DRAFT/images/lep-012-cloud.png"
    inkscape:export-xdpi="90"
    inkscape:export-ydpi="90">
   <defs
@@ -85,15 +85,15 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1"
-     inkscape:cx="199.76909"
-     inkscape:cy="213.76845"
+     inkscape:cx="300.76909"
+     inkscape:cy="227.80133"
      inkscape:document-units="px"
-     inkscape:current-layer="g2996"
+     inkscape:current-layer="layer1"
      showgrid="false"
      inkscape:window-width="1224"
      inkscape:window-height="971"
-     inkscape:window-x="2429"
-     inkscape:window-y="15"
+     inkscape:window-x="2073"
+     inkscape:window-y="13"
      inkscape:window-maximized="0"
      fit-margin-top="30"
      fit-margin-left="30"
@@ -107,7 +107,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -117,32 +117,7 @@
      id="layer1"
      transform="translate(-60.60125,-130.87187)">
     <g
-       id="g2991"
-       transform="matrix(0.82888074,0,0,0.82894322,184.81767,-125.00116)">
-      <rect
-         ry="7.2999835"
-         rx="8.7226505"
-         y="466.89539"
-         x="266.33295"
-         height="118.57143"
-         width="211.42857"
-         id="rect2985"
-         style="fill:#0073cc;fill-opacity:1;stroke:none" />
-      <text
-         sodipodi:linespacing="125%"
-         id="text2987"
-         y="536.79633"
-         x="372.07654"
-         style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
-         xml:space="preserve"><tspan
-           style="font-size:24px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;text-anchor:middle;fill:#ffffff;font-family:Arial;-inkscape-font-specification:Arial Bold"
-           y="536.79633"
-           x="372.07654"
-           id="tspan2989"
-           sodipodi:role="line">Stripe</tspan></text>
-    </g>
-    <g
-       transform="matrix(0.82888074,0,0,0.82894322,184.81767,107.10293)"
+       transform="matrix(0.82888074,0,0,0.82894322,184.81767,47.10293)"
        id="g2996">
       <rect
          style="fill:#0073cc;fill-opacity:1;stroke:none"
@@ -150,24 +125,24 @@
          width="211.42857"
          height="118.57143"
          x="266.33295"
-         y="466.89539"
+         y="322.13275"
          rx="8.7226505"
          ry="7.2999835" />
       <text
          xml:space="preserve"
          style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
          x="372.07654"
-         y="516.85992"
+         y="372.09729"
          id="text3000"
          sodipodi:linespacing="125%"><tspan
            sodipodi:role="line"
            x="372.07654"
-           y="516.85992"
+           y="372.09729"
            style="font-size:24px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;text-anchor:middle;fill:#ffffff;font-family:Arial;-inkscape-font-specification:Arial Bold"
            id="tspan3014">Pro</tspan><tspan
            sodipodi:role="line"
            x="372.07654"
-           y="546.85992"
+           y="402.09729"
            style="font-size:24px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;text-anchor:middle;fill:#ffffff;font-family:Arial;-inkscape-font-specification:Arial Bold"
            id="tspan3012">Server</tspan></text>
     </g>
@@ -177,112 +152,43 @@
        width="175.24908"
        height="98.288979"
        x="90.60125"
-       y="378.08066"
+       y="258.08066"
        rx="7.2300367"
        ry="6.0512714" />
     <text
        xml:space="preserve"
        style="font-size:33.15647888px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
        x="178.25679"
-       y="409.48294"
+       y="289.48743"
        id="text3032"
        sodipodi:linespacing="125%"
-       transform="scale(0.99996235,1.0000376)"><tspan
+       transform="scale(0.9999624,1.0000376)"><tspan
          sodipodi:role="line"
          x="178.25679"
-         y="409.48294"
+         y="289.48743"
          style="font-size:19.89388657px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;text-anchor:middle;fill:#ffffff;font-family:Arial;-inkscape-font-specification:Arial Bold"
          id="tspan3038">Lantern</tspan><tspan
          id="tspan4670"
          sodipodi:role="line"
          x="178.25679"
-         y="434.35031"
+         y="314.3548"
          style="font-size:19.89388657px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;text-anchor:middle;fill:#ffffff;font-family:Arial;-inkscape-font-specification:Arial Bold">Client</tspan><tspan
          id="tspan4672"
          sodipodi:role="line"
          x="178.25679"
-         y="459.21765"
+         y="339.22214"
          style="font-size:19.89388657px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;text-anchor:middle;fill:#ffffff;font-family:Arial;-inkscape-font-specification:Arial Bold">Instance</tspan></text>
-    <text
-       sodipodi:linespacing="125%"
-       id="text4674"
-       y="286.35382"
-       x="317.89694"
-       style="font-size:24.63368797px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
-       xml:space="preserve"
-       transform="scale(0.9999624,1.0000376)"><tspan
-         style="font-size:11.6047678px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;text-anchor:middle;fill:#000000;font-family:Arial;-inkscape-font-specification:Arial"
-         y="286.35382"
-         x="317.89694"
-         sodipodi:role="line"
-         id="tspan4680">1:: Requests payment validation</tspan></text>
     <path
-       style="fill:none;stroke:#535353;stroke-width:2.79999995;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:5.60000032, 5.60000032;stroke-dashoffset:0;marker-start:none;marker-end:url(#TriangleOutM)"
-       d="m 265.33754,413.40164 24.86643,0 0,-117.23626 113.67508,0"
-       id="path3040"
-       inkscape:connector-curvature="0" />
-    <path
-       style="fill:none;stroke:#535353;stroke-width:2.79999995;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:5.60000032, 5.60000032;stroke-dashoffset:0;marker-start:none;marker-end:url(#TriangleOutM)"
-       d="m 403.87905,318.66528 -72.23105,0 0,107.76261 -65.12635,0"
-       id="path3042"
-       inkscape:connector-curvature="0" />
-    <path
-       style="fill:none;stroke:#535353;stroke-width:2.79999995;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:5.60000032, 5.60000032;stroke-dashoffset:0;marker-start:none;marker-end:url(#TriangleOutM)"
-       d="m 266.52165,441.82256 104.20217,0 0,104.21001 33.15523,0"
-       id="path3044"
-       inkscape:connector-curvature="0" />
-    <path
-       style="fill:none;stroke:#535353;stroke-width:2.79999995;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:5.60000032, 5.60000032;stroke-dashoffset:0;marker-start:none;marker-end:url(#TriangleOutM)"
-       d="m 492.6877,492.74335 0,-133.81512"
-       id="path3046"
-       inkscape:connector-curvature="0" />
-    <flowRoot
-       xml:space="preserve"
-       id="flowRoot5270"
-       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
-       transform="matrix(0.82888074,0,0,0.82894322,216.78879,10.813952)"><flowRegion
-         id="flowRegion5272"><rect
-           id="rect5274"
-           width="112.85715"
-           height="115.71429"
-           x="74.285713"
-           y="528.07648" /></flowRegion><flowPara
-         id="flowPara5276"
-         style="font-size:14px;font-family:Arial;-inkscape-font-specification:Arial">3:: Requests payment to be done, provide one-time token</flowPara></flowRoot>    <flowRoot
-       transform="matrix(0.82888074,0,0,0.82894322,274.81044,-101.08023)"
-       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
-       id="flowRoot5278"
-       xml:space="preserve"><flowRegion
-         id="flowRegion5280"><rect
-           y="528.07648"
-           x="74.285713"
-           height="118.57143"
-           width="97.142868"
-           id="rect5282" /></flowRegion><flowPara
-         style="font-size:14px;font-family:Arial;-inkscape-font-specification:Arial"
-         id="flowPara5284">2:: Validates and provides one-time token</flowPara></flowRoot>    <flowRoot
-       transform="matrix(0.82888074,0,0,0.82894322,439.03424,12.366563)"
-       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
-       id="flowRoot5286"
-       xml:space="preserve"><flowRegion
-         id="flowRegion5288"><rect
-           y="528.07648"
-           x="74.285713"
-           height="111.42858"
-           width="135.71428"
-           id="rect5290" /></flowRegion><flowPara
-         style="font-size:14px;font-family:Arial;-inkscape-font-specification:Arial"
-         id="flowPara5292">4:: Requests charge (synchronous call)</flowPara></flowRoot>    <path
        inkscape:connector-curvature="0"
        id="path5313"
-       d="m 492.6877,592.21654 0,86.44693 -315.68517,0 0,-202.49896"
-       style="fill:none;stroke:#535353;stroke-width:2.79999995;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:5.60000032, 5.60000032;stroke-dashoffset:0;marker-start:none;marker-end:url(#TriangleOutM)"
+       d="m 465.6877,410.19558 0,38.46788 -288.68517,0 0,-88.49895"
+       style="fill:none;stroke:#535353;stroke-width:2.79999995;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:5.60000028, 5.60000028;stroke-dashoffset:0;marker-start:none;marker-end:url(#TriangleOutM)"
        sodipodi:nodetypes="cccc" />
     <flowRoot
        xml:space="preserve"
        id="flowRoot5315"
        style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
-       transform="matrix(0.82888074,0,0,0.82894322,313.88624,251.57589)"><flowRegion
+       transform="matrix(0.82888074,0,0,0.82894322,214.88624,210.57589)"><flowRegion
          id="flowRegion5317"><rect
            id="rect5319"
            width="135.71428"
@@ -290,29 +196,124 @@
            x="74.285713"
            y="528.07648" /></flowRegion><flowPara
          id="flowPara5321"
-         style="font-size:14px;font-family:Arial;-inkscape-font-specification:Arial">5:: Launches a server and pairs it with the client</flowPara></flowRoot>    <path
+         style="font-size:14px;font-family:Arial;-inkscape-font-specification:Arial">2:: Cloudmaster detects need for a new Pro user -&gt; does the work</flowPara></flowRoot>    <path
        inkscape:connector-curvature="0"
        id="path5323"
-       d="m 503.34474,592.45337 0,114.86786"
-       style="fill:none;stroke:#535353;stroke-width:2.79999995;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:5.60000032, 5.60000032;stroke-dashoffset:0;marker-start:none;marker-end:url(#TriangleOutM)"
+       d="m 503.34474,412.45339 0,175.14503"
+       style="fill:none;stroke:#535353;stroke-width:2.79999995;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:5.6000004, 5.6000004;stroke-dashoffset:0;marker-start:none;marker-end:url(#TriangleOutM)"
        sodipodi:nodetypes="cc" />
     <text
        sodipodi:linespacing="125%"
        id="text5377"
-       y="176.4146"
+       y="190.41406"
        x="348.73969"
        style="font-size:36.20270538px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
        xml:space="preserve"
-       transform="scale(0.99996235,1.0000376)"><tspan
+       transform="scale(0.9999624,1.0000376)"><tspan
          style="font-size:21.72162247px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;text-anchor:middle;fill:#000000;font-family:Arial;-inkscape-font-specification:Arial Bold"
-         y="176.4146"
+         y="190.41406"
          x="348.73969"
          sodipodi:role="line"
-         id="tspan5383">Payment</tspan><tspan
+         id="tspan5390">Pro Users</tspan><tspan
          style="font-size:21.72162247px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;text-anchor:middle;fill:#000000;font-family:Arial;-inkscape-font-specification:Arial Bold"
-         y="203.56662"
+         y="217.56609"
          x="348.73969"
          sodipodi:role="line"
-         id="tspan5390">Overview</tspan></text>
-  </g>
+         id="tspan5636">Backend</tspan></text>
+    <g
+       id="g4675"
+       transform="matrix(0.82888074,0,0,0.82894322,184.81767,327.10293)">
+      <rect
+         ry="7.2999835"
+         rx="8.7226505"
+         y="322.13275"
+         x="266.33295"
+         height="118.57143"
+         width="211.42857"
+         id="rect4677"
+         style="fill:#0073cc;fill-opacity:1;stroke:none" />
+      <text
+         sodipodi:linespacing="125%"
+         id="text4679"
+         y="388.98633"
+         x="372.07654"
+         style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+         xml:space="preserve"><tspan
+           id="tspan4683"
+           style="font-size:24px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;text-anchor:middle;fill:#ffffff;font-family:Arial;-inkscape-font-specification:Arial Bold"
+           y="388.98633"
+           x="372.07654"
+           sodipodi:role="line">RedisDB</tspan></text>
+    </g>
+    <rect
+       ry="6.0512714"
+       rx="7.2300367"
+       y="518.08069"
+       x="90.60125"
+       height="98.288979"
+       width="175.24908"
+       id="rect4695"
+       style="fill:#0073cc;fill-opacity:1;stroke:none" />
+    <text
+       transform="scale(0.9999624,1.0000376)"
+       sodipodi:linespacing="125%"
+       id="text4697"
+       y="573.47668"
+       x="178.25679"
+       style="font-size:33.15647888px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       xml:space="preserve"><tspan
+         style="font-size:19.89388657px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;text-anchor:middle;fill:#ffffff;font-family:Arial;-inkscape-font-specification:Arial Bold"
+         y="573.47668"
+         x="178.25679"
+         sodipodi:role="line"
+         id="tspan4703">Cloudmaster</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:2.5999999;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:5.2, 5.2;stroke-dashoffset:0;marker-end:url(#TriangleOutM)"
+       d="m 264.60125,570.54295 71,0 0,74 65,0"
+       id="path4712"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccc" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:2.5999999;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:5.2, 5.2;stroke-dashoffset:0;marker-end:url(#TriangleOutM)"
+       d="m 265.60125,557.54295 219,0 0,-140"
+       id="path4714"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccc" />
+    <flowRoot
+       transform="matrix(0.82888074,0,0,0.82894322,454.88624,96.57589)"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       id="flowRoot5624"
+       xml:space="preserve"><flowRegion
+         id="flowRegion5626"><rect
+           y="528.07648"
+           x="74.285713"
+           height="111.42858"
+           width="135.71428"
+           id="rect5628" /></flowRegion><flowPara
+         style="font-size:14px;font-family:Arial;-inkscape-font-specification:Arial"
+         id="flowPara5630">1:: Place a message in Redis (a request for new Pro user)</flowPara></flowRoot>    <flowRoot
+       transform="matrix(0.82888074,0,0,0.82894322,215.88624,60.57589)"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       id="flowRoot5638"
+       xml:space="preserve"><flowRegion
+         id="flowRegion5640"><rect
+           y="528.07648"
+           x="74.285713"
+           height="111.42858"
+           width="135.71428"
+           id="rect5642" /></flowRegion><flowPara
+         style="font-size:14px;font-family:Arial;-inkscape-font-specification:Arial"
+         id="flowPara5644">3:: When the Pro user is ready, provide config to Pro Server</flowPara></flowRoot>    <flowRoot
+       xml:space="preserve"
+       id="flowRoot5646"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       transform="matrix(0.82888074,0,0,0.82894322,225.88624,-58.42411)"><flowRegion
+         id="flowRegion5648"><rect
+           id="rect5650"
+           width="146.5723"
+           height="111.42859"
+           x="74.285713"
+           y="528.07648" /></flowRegion><flowPara
+         id="flowPara5652"
+         style="font-size:14px;font-family:Arial;-inkscape-font-specification:Arial">4:: Register user with service features and send the user an email with the config file</flowPara></flowRoot>  </g>
 </svg>
