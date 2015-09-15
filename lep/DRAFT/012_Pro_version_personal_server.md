@@ -78,7 +78,7 @@ This UI widget will be responsible of sending a request to Stripe/Alipay.  This 
 
 ### 2. Payment processing
 
-The payment process involves the Lanter Client, the Stripe Servers and the Lantern Server.  The proposed workflow is summarized in the following picture:
+The payment process involves the Lanter Client, the Stripe Servers and the Lantern Server.  The Stripe workflow is summarized in the following picture:
 
 <p align="center">
 <img src="images/lep-012-payment.png" alt="Payment Processing"/>
@@ -86,7 +86,7 @@ The payment process involves the Lanter Client, the Stripe Servers and the Lante
 
 The example code shown in the previous section will not execute the charge from the Lantern client UI, but rather send a request to validate the data in Stripe **(step 1)**.  Stripe's JavaScript plugin (called *Checkout*) hijacks the form in order to do this before contacting any of our servers.  Stripe will reply to the AJAX request with a one-time token, which will be inserted into the form **(step 2)**.  Finally, the form is sent by the Lantern UI in a POST request (done via an async callback triggered by the successful AJAX reply from Stripe) to a web service in the Lantern cloud (*the Pro server*), along the token and the validated data **(step 3)**.
 
-This request needs to carry also some data to identify the Lantern instance (lantern id and IP).  For this, we can use Stripe request [metadata](https://stripe.com/docs/api#metadata).  Ideally, this will also provide geolocation and/or IP information.  The geolocation data will be useful for deciding in which DC to launch the proxy.
+This request needs to carry also some data to identify the Lantern instance (lantern id and IP).  For this, generally hidden input fields in the form are used.  Ideally, this will also provide geolocation and/or IP information.  The geolocation data will be useful for deciding in which DC to launch the proxy.
 
 
 #### Pro Server receives confirmation
@@ -106,7 +106,7 @@ Should card details be saved? We don't have users at the moment, and since we ar
 
 #### Overview of Lantern Pro cloud backend
 
-For our purposes, we will need ultimately to handle Pro servers, launch them and pair them with users.  We might want several Pro users in one server, or even a user in two or more servers.  This is the general architecture that will allow flexibility for these options, following the current approach used by the regular Lantern service.
+For our purposes, we will ultimately need to handle Pro servers, launch them and pair them with users.  We might want several Pro users in one server, or even a user in two or more servers.  This is the general architecture that will allow flexibility for these options, based on the current approach used by the regular Lantern service.
 
 <p align="center">
 <img src="images/lep-012-cloud.png" alt="Payment Processing"/>
@@ -114,25 +114,23 @@ For our purposes, we will need ultimately to handle Pro servers, launch them and
 
 #### Redis Pro Servers queue and management
 
-If the payment was successful, the charge has been registered and we can safely launch the server and provide the server and the client with the necessary information for secure proxying.  Thus, the Lantern Pro Server needs to append a new server request in a queue in Redis **(step 1)**.  This will allow *Cloudmaster* to pick up this job and execute the requests in the best datacenter for the Lantern client **(step 2)**.  The Redis DB is effectivelly serving as a message queue between the Pro Server and the Cloudmaster, just as what happens with the Config Server and Cloudmaster for the free service.  Cloudmaster will need watch for new Pro Servers requests, and launch as necessary.  This is currently done for free LCSs, so it could extend the functionality or be based on it.
+If the payment was successful, the charge has been registered and we can safely launch the server and provide the server and the client with the necessary information for secure proxying.  Thus, the Lantern Pro Server needs to append a new server request in a queue in Redis **(step 1)**.  This will allow *Cloudmaster* to pick up this job and execute the requests in the best datacenter for the Lantern client **(step 2)**.  The Redis DB is effectivelly serving as a message queue between the Pro Server and the Cloudmaster, just as what happens with the Config Server and Cloudmaster for the regular service.  Cloudmaster will need watch for new Pro Servers requests, and launch as necessary.  This is currently done for regular LCSs, so it could extend the functionality or be based on it.
 
 #### Automatically configuring the client and server pairing
 
 There is some information that needs to be placed at the newly launched server, and some shared among the client and server.  We will need:
 
 * The access token (in both the client and server)
-
 * The server certificate (in both the client and server)
-
 * The server static IP (in the client)
 
 First, the server should be automatically configured with this information by the Cloudmaster.  It then needs to notify the Pro Server **(step 3)**, confirming successfull launch of the server and providing it with the information for the user.  Once this confirmation is received by the Pro Server, it will register the user service, and send an email to the user with the config file **(step 4)**.
 
-The file-in-email solution is proposed in order to avoid these potential issues:
+The *file-in-email* solution is proposed in order to avoid these potential issues:
 
 * The  differentiated method for purchasing Pro for one Lantern instance and several.  In other words, if you want to share the token, you inevitably need to introduce a different step for configuration.  The file can be directly shared to other Lantern instances or users and the sharing problem would be solved.  This email will contain also a direct link to the local UI to easily open the file attached and make the configuration automatic.
 
-* The time taken to spawn a new server until it becomes functional.  If it's too long, a notification system should be put in place, instead of a simple push/long-poll that seems to assume that the user will be in front of the UI waiting for the setup to be finished.  A proper waiting UI could be a solution for this, though.
+* The time taken to spawn a new server until it becomes functional.  It's more robust to decouple the UI from the events in the Lantern Cloud.
 
 
 When the Lantern client gets all the information it requires to pair with the server, it can proceed to override config.  It is suggested that the regular free Lantern config is left as a fallback, in case there is an issue with the Pro Server, giving time to the Lantern team to investigate.
@@ -146,16 +144,11 @@ These are some less critical but relevant options suggested for *Lantern Pro*:
 
 * Regenerate token (for security reasons, in case of unwanted share)
 
-The following is a crude approximation of how the UI could look like is:
+The following is a crude approximation of how the UI could look like:
 
 <p align="center">
 <img src="images/lep-012-options.png" alt="Options"/>
 </p>
-
-If the alternate path for config distribution to clients is chosen, the *share token* option becomes irrelevant.
-
-The details on the implementation of these extensions are left for a second pass, once the core part of the project is in place and the details are figured out.  Probably users will tell if these are actually desired features or just cruft.
-
 
 
 ## Conclusion

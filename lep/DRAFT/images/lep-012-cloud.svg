@@ -86,7 +86,7 @@
      inkscape:pageshadow="2"
      inkscape:zoom="1"
      inkscape:cx="300.76909"
-     inkscape:cy="227.80133"
+     inkscape:cy="307.80133"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -182,7 +182,7 @@
        inkscape:connector-curvature="0"
        id="path5313"
        d="m 465.6877,410.19558 0,38.46788 -288.68517,0 0,-88.49895"
-       style="fill:none;stroke:#535353;stroke-width:2.79999995;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:5.60000028, 5.60000028;stroke-dashoffset:0;marker-start:none;marker-end:url(#TriangleOutM)"
+       style="fill:none;stroke:#535353;stroke-width:2.79999995;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker-start:none;marker-end:url(#TriangleOutM)"
        sodipodi:nodetypes="cccc" />
     <flowRoot
        xml:space="preserve"
