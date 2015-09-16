@@ -102,7 +102,7 @@ At this point, the charge has been done and we can proceed with launching a serv
 Should card details be saved? We don't have users at the moment, and since we are working with tokens, it is probably best to keep it simple without users.  Additionally, it seems that Alipay users are more confortable with one-time payments than subscriptions, even if for larger periods.  Although they are separate things, the fact that users don't like subscriptions suggests that is better to just provide a very simple UI and no information saving or accounts.
 
 
-### 3. Providing a private Pro Server to the client
+### 3. Providing a private server to the client
 
 #### Overview of Lantern Pro cloud backend
 
@@ -112,9 +112,9 @@ For our purposes, we will ultimately need to handle Pro servers, launch them and
 <img src="images/lep-012-cloud.png" alt="Payment Processing"/>
 </p>
 
-#### Redis Pro Servers queue and management
+#### Redis servers queue and management
 
-If the payment was successful, the charge has been registered and we can safely launch the server and provide the server and the client with the necessary information for secure proxying.  Thus, the Lantern Pro Server needs to append a new server request in a queue in Redis **(step 1)**.  This will allow *Cloudmaster* to pick up this job and execute the requests in the best datacenter for the Lantern client **(step 2)**.  The Redis DB is effectivelly serving as a message queue between the Pro Server and the Cloudmaster, just as what happens with the Config Server and Cloudmaster for the regular service.  Cloudmaster will need watch for new Pro Servers requests, and launch as necessary.  This is currently done for regular LCSs, so it could extend the functionality or be based on it.
+If the payment was successful, the charge has been registered and we can safely launch the server and provide the server and the client with the necessary information for secure proxying.  Thus, the Lantern Pro Server needs to append a new server request in a queue in Redis **(step 1)**.  This will allow *Cloudmaster* to pick up this job and execute the requests in the best datacenter for the Lantern client **(step 2)**.  The Redis DB is effectivelly serving as a message queue between the Pro Server and the Cloudmaster, just as what happens with the Config Server and Cloudmaster for the regular service.  Cloudmaster will need watch for new private servers requests, and launch as necessary.  This is currently done for regular LCSs, so it could extend the functionality or be based on it.
 
 #### Automatically configuring the client and server pairing
 
@@ -133,14 +133,14 @@ The *file-in-email* solution is proposed in order to avoid these potential issue
 * The time taken to spawn a new server until it becomes functional.  It's more robust to decouple the UI from the events in the Lantern Cloud.
 
 
-When the Lantern client gets all the information it requires to pair with the server, it can proceed to override config.  It is suggested that the regular free Lantern config is left as a fallback, in case there is an issue with the Pro Server, giving time to the Lantern team to investigate.
+When the Lantern client gets all the information it requires to pair with the server, it can proceed to override config.  It is suggested that the regular free Lantern config is left as a fallback, in case there is an issue with the private server, giving time to the Lantern team to investigate.
 
 
 ## Sharing across devices and users
 
 These are some less critical but relevant options suggested for *Lantern Pro*:
 
-* Share token (share the Lantern Pro Server with other instances of Lantern or users).
+* Share token (share the Lantern private server with other instances of Lantern or users).
 
 * Regenerate token (for security reasons, in case of unwanted share)
 
