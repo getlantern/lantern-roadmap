@@ -69,3 +69,5 @@ The second column comprises the endpoints provided by the *pro-server* and any c
 The third column depicts the processes carried by the backend endpoints, where different subsystems and external APIs are orchestrated to satisfy client's requests.  Critical processes may require atomicity, and are marked as such.  One important thing to note is that this diagram shows only processes and not implementation details, which may imply some specific solutions to handle fault-tolerance and atomicity where required.
 
 *Note: the diagram uses more than one RedisDB nodes for the sake of graphical simplification, but they are actually the same node.*
+
+The [next diagram](images/user_creation.png) depicts in further detail the process for fault-tolerant user creation. 
